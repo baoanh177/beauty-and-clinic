@@ -1,12 +1,13 @@
 import playIcon from "@/assets/images/play-btn-icon.png"
 import image from "@/assets/images/about-img.png"
+import background from "@/assets/images/about-bg.png"
 
 const About = () => {
   return (
     <>
       {/* About */}
       <section className="about">
-        <img src="./assets/images/about-bg.png" className="about-bg" alt="" />
+        <img src={background} className="about-bg" alt="" />
         <div className="about-inner container">
           <article className="content">
             <span className="subtitle">About Us</span>

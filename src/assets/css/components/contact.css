@@ -19,23 +19,23 @@
   @apply flex flex-col gap-3;
 }
 .contact .heading .subtitle {
-  @apply text-[16px] font-semibold leading-[20px] text-left text-[color:var(--primary-color)];
+  @apply text-left text-[16px] font-semibold leading-[20px] text-[color:var(--primary-color)];
 }
 .contact .heading .title {
-  @apply max-w-[404px] min-h-[97px];
+  @apply min-h-[97px] max-w-[404px];
 }
 .contact .heading .desc {
   @apply min-h-[28px];
 }
 .contact .contact-form .form-inner {
-  @apply w-full flex flex-wrap gap-[38px_35px] mt-11;
+  @apply mt-11 flex w-full flex-wrap gap-[38px_35px];
 }
 .contact .contact-form .form-inner .group {
   @apply flex grow gap-[35px];
 }
 .contact .contact-form input,
 .contact .contact-form textarea {
-  @apply h-[61.58px] border block grow box-border basis-[400px] pl-6 py-[17px] rounded-[15px] border-solid border-[#d9ddfe];
+  @apply box-border w-full block h-[61.58px] grow basis-[400px] rounded-[15px] border border-solid border-[#d9ddfe] py-[17px] px-6;
   background: var(--white-color);
 }
 .contact .contact-form textarea {
@@ -43,13 +43,13 @@
 }
 .contact .contact-form input::placeholder,
 .contact .contact-form textarea::placeholder {
-  @apply translate-y-0.5 text-[16px] font-normal leading-[24px] tracking-widest text-left text-[color:var(--placeholder-color)];
+  @apply translate-y-0.5 text-left text-[16px] font-normal leading-[24px] tracking-widest text-[color:var(--placeholder-color)];
 }
 .contact .contact-form textarea::placeholder {
   @apply -translate-y-0.5;
 }
 .contact-form .contact-btn {
-  @apply min-h-[58px] min-w-[248px] shadow-[0px_17px_22px_0px_#ffedf6] ml-px mt-14 pl-[37px] pr-[38px] pt-[15px] pb-4;
+  @apply ml-px mt-14 min-h-[58px] min-w-[248px] pb-4 pl-[37px] pr-[38px] pt-[15px] shadow-[0px_17px_22px_0px_#ffedf6];
 }
 .contact .contact-img {
   @apply mt-10;
@@ -63,5 +63,14 @@
   }
   .contact .heading {
     @apply flex flex-col items-center text-center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact .contact-form .form-inner .group {
+    @apply flex-col;
+  }
+  .contact .contact-form .form-inner .group input {
+    @apply basis-0;
   }
 }

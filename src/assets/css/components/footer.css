@@ -65,7 +65,6 @@
 .footer > .row .copyright {
   @apply text-[16px] font-normal leading-[24px] tracking-widest;
 }
-@media screen and (max-width: 1200px) {}
 @media screen and (max-width: 1200px) {
   .footer {
     @apply h-[unset] px-0 py-14;
@@ -82,5 +81,14 @@
   }
   .footer .information-content {
     @apply pl-0;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .footer-bg {
+    @apply hidden;
+  }
+  .footer {
+    @apply h-[unset] px-0 py-14 bg-[#0d165c]
   }
 }

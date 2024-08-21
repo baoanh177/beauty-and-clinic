@@ -4,7 +4,7 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .sidebar {
-  @apply fixed w-[400px] z-[999] transition-[translate] duration-[0.2s] max-w-[90%] p-10 left-0 inset-y-0;
+  @apply fixed w-[400px] z-[999] transition-[translate] duration-[0.2s] max-w-[90%] p-10 left-0 inset-y-0 overflow-hidden;
   background: #fff;
   translate: -100% 0;
 }
