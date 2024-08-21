@@ -4,11 +4,10 @@ import Button from "@/components/Button";
 import { Dispatch, SetStateAction } from "react";
 
 interface IHeaderProps {
-  sidebar: boolean;
   setSidebar: Dispatch<SetStateAction<boolean>>;
 }
 
-const Header = ({ sidebar, setSidebar }: IHeaderProps) => {
+const Header = ({ setSidebar }: IHeaderProps) => {
   return (
     <>
       {/* Header */}

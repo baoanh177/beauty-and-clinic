@@ -17,7 +17,7 @@ const DefaultLayout = () => {
   };
   return (
     <>
-      <Header sidebar={sidebar} setSidebar={setSidebar} />
+      <Header setSidebar={setSidebar} />
       <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
       <Outlet />
       {goToTop && <GoToTop />}
