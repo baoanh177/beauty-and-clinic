@@ -78,7 +78,7 @@
     @apply mt-[30px] flex-col items-center gap-5;
   }
   .footer .content .pages {
-    @apply w-full justify-between gap-5 p-0;
+    @apply w-full justify-between gap-5 p-0 px-5;
   }
   .footer .information-content {
     @apply pl-0;
