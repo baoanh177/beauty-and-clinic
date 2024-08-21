@@ -1,0 +1,43 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.hero-background {
+  @apply absolute z-[-1] left-0 top-0;
+}
+.hero {
+  @apply relative !mt-[159px] pl-[39px] pb-[136px];
+}
+.hero .hero-inner {
+  @apply flex items-center gap-[22px];
+}
+.hero-content {
+  @apply shrink-0 mt-[-25px];
+}
+.hero .title {
+  @apply text-[48px] font-semibold min-h-[128px] leading-[60px] text-left max-w-[430px];
+}
+.hero .desc {
+  @apply max-w-[474px] text-[16px] font-medium leading-[24px] tracking-widest min-h-[54px] text-left text-[color:var(--title-color)];
+}
+.hero .hero-btn {
+  @apply min-w-[200px] shadow-[0px_17px_22px_0px_#FFEDF6] min-h-[58.36px] mt-[28px] pt-[16.36px] pb-[15.06px];
+}
+.pagination {
+  @apply absolute bottom-[-5px] flex items-center gap-2 justify-center inset-x-0;
+}
+.pagination-item {
+  @apply w-[14.82px] h-[3.09px] rounded-[99px] bg-[#eee];
+}
+.pagination-item.active {
+  @apply w-[25.31px] h-[8.15px] bg-[color:var(--active-color)] rounded-[99px];
+}
+@media screen and (max-width: 1024px) {
+  .hero .hero-inner {
+    @apply flex-col;
+  }
+  .hero {
+    @apply mt-[100px];
+  }
+}

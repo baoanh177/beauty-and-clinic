@@ -1,0 +1,67 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.contact {
+  @apply relative mt-[147px];
+}
+.contact-bg {
+  @apply absolute z-[-1];
+}
+.contact-inner {
+  @apply flex items-center gap-[100px];
+}
+.contact .content {
+  @apply max-w-[520px];
+}
+.contact .heading {
+  @apply flex flex-col gap-3;
+}
+.contact .heading .subtitle {
+  @apply text-[16px] font-semibold leading-[20px] text-left text-[color:var(--primary-color)];
+}
+.contact .heading .title {
+  @apply max-w-[404px] min-h-[97px];
+}
+.contact .heading .desc {
+  @apply min-h-[28px];
+}
+.contact .contact-form .form-inner {
+  @apply w-full flex flex-wrap gap-[38px_35px] mt-11;
+}
+.contact .contact-form .form-inner .group {
+  @apply flex grow gap-[35px];
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+  @apply h-[61.58px] border block grow box-border basis-[400px] pl-6 py-[17px] rounded-[15px] border-solid border-[#d9ddfe];
+  background: var(--white-color);
+}
+.contact .contact-form textarea {
+  @apply h-[239px] resize-none px-6 py-[25px];
+}
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
+  @apply translate-y-0.5 text-[16px] font-normal leading-[24px] tracking-widest text-left text-[color:var(--placeholder-color)];
+}
+.contact .contact-form textarea::placeholder {
+  @apply -translate-y-0.5;
+}
+.contact-form .contact-btn {
+  @apply min-h-[58px] min-w-[248px] shadow-[0px_17px_22px_0px_#ffedf6] ml-px mt-14 pl-[37px] pr-[38px] pt-[15px] pb-4;
+}
+.contact .contact-img {
+  @apply mt-10;
+}
+@media screen and (max-width: 1024px) {
+  .contact-inner {
+    @apply flex-col;
+  }
+  .contact .heading .subtitle {
+    @apply text-center;
+  }
+  .contact .heading {
+    @apply flex flex-col items-center text-center;
+  }
+}

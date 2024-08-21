@@ -1,0 +1,64 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.teams {
+  @apply !mt-[144px];
+}
+.teams .heading .subtitle {
+  @apply text-[#ff64ae] text-[16px] font-semibold leading-[20px] text-center;
+}
+.teams .heading {
+  @apply flex flex-col items-center gap-3;
+}
+.teams .heading .title {
+  @apply min-h-[53px];
+}
+.teams .desc {
+  @apply min-h-[51px];
+}
+.teams .member-list {
+  @apply flex items-center justify-center gap-[60px] mt-[83px];
+}
+.teams .member-list .card {
+  @apply flex flex-col items-center text-center;
+}
+.teams .member-list .card.active {
+  @apply shadow-[0px_25px_50px_25px_#F6F7FF] pt-[93px] pb-24 px-[77px] rounded-[42px];
+}
+.teams .member-list .card .avatar {
+  @apply shrink-0 w-[146px] h-[146px] overflow-hidden rounded-[50%];
+}
+.teams .member-list .card .content {
+  @apply mt-[53px] mb-[50px];
+}
+.teams .member-list .card .role {
+  @apply text-base font-semibold leading-[20px] text-center text-[color:var(--primary-color)];
+}
+.teams .member-list .card .name {
+  @apply min-h-[37px] text-[18px] font-semibold leading-[22.5px] text-center text-[color:var(--title-color)] mt-[10px] mb-1.5;
+}
+.teams .member-list .card .desc {
+  @apply w-[270px] text-[14px] font-normal leading-[21px] tracking-widest text-center text-[color:var(--secondary-color)];
+}
+.teams .member-list .card .socials {
+  @apply flex items-center gap-[34px];
+}
+.teams .member-list .card .social-item {
+  @apply flex items-center justify-center shadow-[-2px_6px_16px_-1px_#e6e9fd] w-[49px] h-[49px] cursor-pointer transition-[background] duration-[0.2s] rounded-[50%];
+}
+.teams .member-list .card .social-item:hover {
+  background: #fafafa;
+}
+@media screen and (max-width: 1024px) {
+  .teams .member-list {
+    @apply flex-col gap-5;
+  }
+  .teams .heading {
+    @apply text-center;
+  }
+  .teams .desc {
+    @apply text-center;
+  }
+}

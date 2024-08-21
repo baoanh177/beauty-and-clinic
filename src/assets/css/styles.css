@@ -1,0 +1,24 @@
+@import url("./variables.css");
+@import url("./common.css");
+@import url("./components/header.css");
+@import url("./components/sidebar.css");
+@import url("./components/hero.css");
+@import url("./components/service.css");
+@import url("./components/about.css");
+@import url("./components/team.css");
+@import url("./components/contact.css");
+@import url("./components/footer.css");
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+html {
+  font-family: Poppins;
+}
+body {
+  @apply overflow-x-hidden;
+}
+body::-webkit-scrollbar {
+  @apply hidden;
+}
