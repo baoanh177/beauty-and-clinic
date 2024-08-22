@@ -20,7 +20,7 @@
   @apply text-[16px] font-semibold leading-[20px] text-left text-[color:var(--primary-color)];
 }
 .about .content .title {
-  @apply min-h-[52px] max-w-[664px] mt-3;
+  @apply min-h-[52px] max-w-[664px] mt-[10px];
 }
 .about .content .desc {
   @apply flex flex-col max-w-[483px] gap-6 mt-3;
@@ -32,13 +32,13 @@
   @apply min-w-[200px] h-[58.36px] pt-[16.36px] pb-[15.06px];
 }
 .about .content .actions .watch-btn {
-  @apply flex items-center gap-[13px];
+  @apply flex items-center gap-[13px] mt-[1px];
 }
 .about .content .actions .watch-btn span {
-  @apply text-[16px] font-semibold leading-[24px] tracking-widest text-[color:var(--secondary-color)];
+  @apply block text-[16px] font-semibold leading-[24px] tracking-widest text-[color:var(--secondary-color)];
 }
 .about .about-image {
-  @apply w-[476px] h-[350px] rounded-[50px] align-baseline;
+  @apply w-[476px] h-[350px] mb-[4px] rounded-[50px] align-baseline;
 }
 .about .about-image img {
   @apply object-cover w-full h-full;

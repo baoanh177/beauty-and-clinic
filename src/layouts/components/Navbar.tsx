@@ -14,7 +14,7 @@ const Navbar = () => {
             return (
               <li key={index} className={clsx("menu-item", isActive && "active")}>
                 <span>{item.name}</span>
-                {isActive && <img src={plusIcon} alt="" />}
+                {isActive && <img src={plusIcon} alt="" className="plus-icon" />}
               </li>
             );
           })}

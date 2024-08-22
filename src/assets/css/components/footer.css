@@ -4,7 +4,7 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .footer {
-  @apply relative mt-[69.66px] h-[705px] text-[color:var(--white-color)];
+  @apply relative mt-[70px] h-[705px] text-[color:var(--white-color)];
 }
 .footer-bg {
   @apply absolute inset-x-0 bottom-0 z-[-1] w-full;
@@ -14,13 +14,16 @@
   background: #0d165c;
 }
 .footer .content {
-  @apply flex items-center gap-[129px] pt-[225px];
+  @apply flex items-center gap-[128px] pt-[225px];
+}
+.footer .information {
+  @apply mt-[0px];
 }
 .footer .information-content {
   @apply pl-[31px];
 }
 .footer .information-content .info-1 {
-  @apply mt-[32px] text-[16px] font-normal leading-[24px] tracking-widest;
+  @apply mt-[34px] text-[16px] font-normal leading-[24px] tracking-widest;
 }
 .footer .information-content .info-1 strong {
   @apply font-bold;
@@ -32,10 +35,10 @@
   @apply min-w-[140px];
 }
 .footer .information-content .address {
-  @apply mt-[26px] text-[14px] font-medium italic leading-[21px] tracking-widest;
+  @apply mt-[22px] ml-[1px] text-[14px] font-medium italic leading-[21px] tracking-widest;
 }
 .footer .information-content .row {
-  @apply mt-px flex items-center gap-7 text-[14px] font-medium italic leading-[21px] tracking-widest text-[color:var(--white-color)];
+  @apply mt-1 flex items-center gap-7 text-[14px] font-medium italic leading-[21px] tracking-widest text-[color:var(--white-color)];
 }
 .footer .information-content .row .email {
   @apply underline;
@@ -44,7 +47,7 @@
   @apply flex flex-col gap-[26px];
 }
 .footer .content .col-title {
-  @apply text-[18px] font-semibold leading-[27px] tracking-widest;
+  @apply text-[18px] font-semibold leading-[27px] tracking-widest -translate-y-[2px] translate-x-[1px];
 }
 .footer .content .page-list {
   @apply flex flex-col gap-[11px];
@@ -53,7 +56,7 @@
   @apply flex flex-nowrap text-[16px] font-normal leading-[24px] tracking-widest;
 }
 .footer .content .pages {
-  @apply flex gap-[220px] pl-[30px] pt-[3px];
+  @apply flex gap-[206px] pl-[30px] pt-[3px];
   justify-content: start;
 }
 .footer > .row {
@@ -63,7 +66,7 @@
   @apply flex items-center gap-[45px];
 }
 .footer > .row .copyright {
-  @apply text-[16px] font-normal leading-[24px] tracking-widest;
+  @apply text-[16px] font-normal leading-[24px] tracking-widest translate-x-[1px];
 }
 @media screen and (max-width: 1200px) {
   .footer {

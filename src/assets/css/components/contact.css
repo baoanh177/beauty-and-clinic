@@ -4,7 +4,7 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .contact {
-  @apply relative mt-[147px];
+  @apply relative mt-[145px];
 }
 .contact-bg {
   @apply absolute z-[-1];
@@ -19,7 +19,7 @@
   @apply flex flex-col gap-3;
 }
 .contact .heading .subtitle {
-  @apply text-left text-[16px] font-semibold leading-[20px] text-[color:var(--primary-color)];
+  @apply text-left text-[16px] font-semibold leading-[20px] ml-[2px] text-[color:var(--primary-color)];
 }
 .contact .heading .title {
   @apply min-h-[97px] max-w-[404px];
@@ -43,16 +43,19 @@
 }
 .contact .contact-form input::placeholder,
 .contact .contact-form textarea::placeholder {
-  @apply translate-y-0.5 text-left text-[16px] font-normal leading-[24px] tracking-widest text-[color:var(--placeholder-color)];
+  @apply -translate-y-[3px] text-left text-[16px] font-normal leading-[24px] tracking-widest text-[color:var(--placeholder-color)];
+}
+.contact .contact-form .group input:nth-child(2)::placeholder {
+  @apply pl-1;
 }
 .contact .contact-form textarea::placeholder {
   @apply -translate-y-0.5;
 }
 .contact-form .contact-btn {
-  @apply ml-px mt-14 min-h-[58px] min-w-[248px] pb-4 pl-[37px] pr-[38px] pt-[15px] shadow-[0px_17px_22px_0px_#ffedf6];
+  @apply ml-px mt-[54.8px] min-h-[58px] min-w-[248px] pb-4 pl-[37px] pr-[38px] pt-[15px] shadow-[0px_17px_22px_0px_#ffedf6];
 }
 .contact .contact-img {
-  @apply mt-10;
+  @apply mt-9 ml-[1px];
 }
 @media screen and (max-width: 1024px) {
   .contact-inner {

@@ -4,7 +4,7 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .service {
-  @apply pt-[136px];
+  @apply pt-[140px];
 }
 .service .heading {
   @apply flex flex-col items-center gap-[12px];
@@ -16,23 +16,23 @@
   @apply min-h-[97px] text-[36px] font-semibold leading-[45px] max-w-[732px] text-center text-[color:var(--title-color)];
 }
 .service .heading .desc {
-  @apply text-[16px] font-normal leading-[24px] tracking-widest text-center text-[color:var(--secondary-color)] max-w-[848px];
+  @apply text-[16px] mt-[-1px] font-normal leading-[24px] tracking-widest text-center text-[color:var(--secondary-color)] max-w-[848px];
 }
 .service .service-list {
   @apply flex gap-14 mt-[82px];
 }
 .service .card {
-  @apply flex flex-col items-center basis-[343px] shadow-[0px_25px_50px_25px_#f6f7ff] pl-[34px] pr-[35px] pt-[59px] pb-[52px] rounded-[42px];
+  @apply flex flex-col items-center basis-[343px] shadow-[0px_25px_50px_25px_#f6f7ff] pl-[34px] pr-[35px] pt-[62px] pb-[52px] rounded-[42px];
   background: white;
 }
 .service .card .content {
-  @apply flex flex-col items-center gap-1.5 mt-[58px];
+  @apply flex flex-col items-center gap-1.5 mt-[57px];
 }
 .service .card .title {
   @apply min-h-[37px] text-[18px] font-semibold leading-[22.5px] text-center text-[color:var(--title-color)] pt-px;
 }
 .service .card .desc {
-  @apply min-w-[274px] text-[14px] font-normal leading-[21px] tracking-widest text-center text-[color:var(--secondary-color)];
+  @apply min-w-[274px] text-[14px] font-normal mt-[1px] leading-[21px] tracking-widest text-center text-[color:var(--secondary-color)];
 }
 @media screen and (max-width: 1024px) {
   .service .service-list {

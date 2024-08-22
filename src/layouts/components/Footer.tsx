@@ -47,7 +47,7 @@ const Footer = () => {
                 <li className="item">
                   <a href="" className="flex items-center gap-3">
                     <i className="fa-solid fa-caret-right text-[10px]" />
-                    <span>Service</span>
+                    <span>Services</span>
                   </a>
                 </li>
                 <li className="item">
@@ -76,7 +76,7 @@ const Footer = () => {
                 <li className="item">
                   <a href="" className="flex items-center gap-3">
                     <i className="fa-solid fa-caret-right text-[10px]" />
-                    <span>Privacy policys</span>
+                    <span>Privacy policy</span>
                   </a>
                 </li>
                 <li className="item">

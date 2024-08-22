@@ -11,13 +11,25 @@
   @apply flex items-center justify-between h-[63px] !mt-[41px] px-0 py-1;
 }
 .header .actions {
-  @apply mt-[-3px] flex items-center gap-[52px];
+  @apply mt-[-3px] flex items-center gap-[51px];
 }
 .header .actions .menu {
-  @apply flex items-center gap-[45px];
+  @apply flex items-center;
 }
 .header .actions .menu .menu-item {
-  @apply flex items-center gap-[5px] text-[16px] font-medium leading-[24px] tracking-widest text-left cursor-pointer text-[color:var(--secondary-color)];
+  @apply flex items-center gap-[5px] text-[16px] font-medium leading-[24px] tracking-[0.1em] text-left cursor-pointer text-[color:var(--secondary-color)];
+}
+.header .actions .menu .menu-item:nth-child(1) {
+  @apply mr-[44px];
+}
+.header .actions .menu .menu-item:nth-child(2) {
+  @apply mb-[1px] mr-[43px];
+}
+.header .actions .menu .menu-item:nth-child(3) {
+  @apply mr-[46px];
+}
+.header .actions .menu .menu-item:nth-child(4) {
+  @apply mr-[46px];
 }
 .header .actions .menu .menu-item:not(.active):hover {
   @apply text-[color:var(--active-color)];
@@ -29,10 +41,10 @@
   @apply hidden;
 }
 .header .actions .menu .menu-item.active .plus-icon {
-  @apply block;
+  @apply block mt-[2px];
 }
 .header .contact-btn {
-  @apply text-[16px] font-semibold leading-[24px] min-w-[158px] px-[41px] py-3.5;
+  @apply text-base font-semibold leading-6 tracking-[0.09em] py-[14px]
 }
 .header .menu-icon {
   @apply hidden text-[16px] cursor-pointer;

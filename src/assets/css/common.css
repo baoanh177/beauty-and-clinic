@@ -60,7 +60,7 @@ h2.title {
   @apply h-[63px] w-[63px];
 }
 .go-to-top {
-  @apply flex z-20 items-center justify-center fixed w-9 h-9 text-[color:var(--white-color)] text-[18px] cursor-pointer rounded-[5px] right-[66px] bottom-[170px];
+  @apply flex z-20 items-center justify-center fixed w-9 h-9 text-[color:var(--white-color)] text-[18px] cursor-pointer rounded-[5px] right-[95px] bottom-[170px];
   background: var(--primary-color);
 }
 @media screen and (max-width: 1024px) {

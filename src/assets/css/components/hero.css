@@ -7,13 +7,13 @@
   @apply absolute z-[-1] left-0 top-0;
 }
 .hero {
-  @apply relative !mt-[159px] pl-[39px] pb-[136px];
+  @apply relative !mt-[156px] pl-[39px] pb-[136px];
 }
 .hero .hero-inner {
   @apply flex items-center gap-[22px];
 }
 .hero-content {
-  @apply shrink-0 mt-[-25px];
+  @apply shrink-0 mt-[-20px];
 }
 .hero .title {
   @apply text-[48px] font-semibold min-h-[128px] leading-[60px] text-left max-w-[430px];
@@ -22,10 +22,10 @@
   @apply max-w-[474px] text-[16px] font-medium leading-[24px] tracking-widest min-h-[54px] text-left text-[color:var(--title-color)];
 }
 .hero .hero-btn {
-  @apply min-w-[200px] shadow-[0px_17px_22px_0px_#FFEDF6] min-h-[58.36px] mt-[28px] pt-[16.36px] pb-[15.06px];
+  @apply min-w-[200px] shadow-[0px_17px_22px_0px_#FFEDF6] min-h-[58.36px] mt-[27px] pt-[16.36px] pb-[15.06px] pr-10 leading-[26.94px];
 }
 .pagination {
-  @apply absolute bottom-[-5px] flex items-center gap-2 justify-center inset-x-0;
+  @apply absolute bottom-[-8px] translate-x-[.5px] flex items-center gap-2 justify-center inset-x-0;
 }
 .pagination-item {
   @apply w-[14.82px] h-[3.09px] rounded-[99px] bg-[#eee];
