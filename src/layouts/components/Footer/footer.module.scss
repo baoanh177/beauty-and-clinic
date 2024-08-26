@@ -110,3 +110,13 @@
     }
   }
 }
+
+@media screen and (min-width: 1650px) {
+  .footer {
+    @apply h-[unset] px-0 py-14 bg-[#0d165c];
+
+    &Bg {
+      @apply hidden;
+    }
+  }
+}

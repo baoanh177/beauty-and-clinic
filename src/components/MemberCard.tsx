@@ -2,20 +2,22 @@ import clsx from "clsx";
 import twitter from "@/assets/images/twitter-icon.png";
 import facebook from "@/assets/images/facebook-icon.png";
 import ig from "@/assets/images/ig-icon.png";
+import { useRef } from "react";
 
 export interface IMemberCardProps {
   role: string;
   name: string;
   desc: string;
   avatar: string;
-  isActive?: boolean;
   css: Record<string, string>
 }
 
-const MemberCard = ({ role, name, desc, avatar, isActive, css }: IMemberCardProps) => {
+const MemberCard = ({ role, name, desc, avatar, css }: IMemberCardProps) => {
+  const cardRef = useRef<HTMLLIElement>(null)
+
   return (
     <>
-      <li className={clsx(css.card, isActive && css.active)}>
+      <li className={clsx(css.card)} ref={cardRef}>
         <div className={css.avatar}>
           <img src={avatar} alt="" />
         </div>

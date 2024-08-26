@@ -38,7 +38,7 @@ const Team = () => {
           <p className={clsx(css.desc, "desc")}>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
         </div>
         <ul className={css.memberList}>
-          {members.map((mem, index) => <MemberCard key={index} {...mem} isActive={index === 1} css={css}/>)}
+          {members.map((mem, index) => <MemberCard key={index} {...mem} css={css}/>)}
         </ul>
       </section>
     </>

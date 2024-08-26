@@ -27,10 +27,10 @@
     @apply flex items-center justify-center gap-[60px] mt-[83px];
 
     .card {
-      @apply flex flex-col items-center text-center;
+      @apply flex flex-col items-center text-center pt-[94px] pb-24 rounded-[42px] transition-[padding,border-radius] duration-700;
 
-      &.active {
-        @apply shadow-[0px_25px_50px_25px_#F6F7FF] pt-[94px] pb-24 px-[77px] rounded-[42px];
+      &:hover {
+        @apply shadow-[0px_25px_50px_25px_#F6F7FF] px-[77px];
 
         .content {
           @apply mt-[52px];
