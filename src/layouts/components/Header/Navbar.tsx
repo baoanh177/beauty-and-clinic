@@ -1,15 +1,20 @@
 import clsx from "clsx";
 import { useLocation } from "react-router-dom";
-import { menu } from "../../data";
-import css from "./header.module.scss"
+import css from "./header.module.scss";
+import { IMenuItem } from "@/layouts/data";
 
-const Navbar = ({ type = "dark" }: { type?: "dark" | "light"}) => {
+export interface INavbarProps {
+  type?: "dark" | "light";
+  items?: IMenuItem[];
+}
+
+const Navbar = ({ type = "dark", items = []}: INavbarProps) => {
   const path = useLocation().pathname;
   return (
     <>
       <nav className={clsx(css.navbar, css[type])}>
         <ul className={css.menu}>
-          {menu.map((item, index) => {
+          {items.map((item, index) => {
             const isActive = item.path === path;
             return (
               <li key={index} className={clsx(css.menuItem, isActive && css.active)}>

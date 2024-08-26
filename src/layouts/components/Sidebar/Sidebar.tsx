@@ -1,14 +1,15 @@
 import Button from "@/components/Button/Button";
-import { menu } from "../../data";
 import { Dispatch, SetStateAction } from "react";
 import clsx from "clsx";
+import { IMenuItem } from "@/layouts/data";
 
 interface ISidebarProps {
   sidebar: boolean;
   setSidebar: Dispatch<SetStateAction<boolean>>;
+  items: IMenuItem[];
 }
 
-const Sidebar = ({ sidebar, setSidebar }: ISidebarProps) => {
+const Sidebar = ({ sidebar, setSidebar, items }: ISidebarProps) => {
   return (
     <>
       {/* Sidebar */}
@@ -28,7 +29,7 @@ const Sidebar = ({ sidebar, setSidebar }: ISidebarProps) => {
         <div className="flex h-full flex-col">
           <nav>
             <ul className="flex flex-col gap-[30px] pl-5">
-              {menu.map((item, index) => {
+              {items.map((item, index) => {
                 return (
                   <li key={index} className="flex shrink-0 cursor-pointer gap-[5px] text-[1.6rem] transition-colors hover:text-[#ff64ae]">
                     {item.name}

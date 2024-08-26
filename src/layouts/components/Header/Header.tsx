@@ -1,5 +1,5 @@
 import Logo, { ILogoProps } from "@/components/Logo/Logo";
-import Navbar from "./Navbar";
+import Navbar, { INavbarProps } from "./Navbar";
 import Button from "@/components/Button/Button";
 import { Dispatch, SetStateAction } from "react";
 import css from "./header.module.scss";
@@ -8,7 +8,7 @@ import clsx from "clsx";
 interface IHeaderProps {
   setSidebar: Dispatch<SetStateAction<boolean>>;
   logo?: ILogoProps;
-  nav?: { type: "dark" | "light" };
+  nav?: INavbarProps;
   className?: string;
 }
 
