@@ -5,7 +5,7 @@
 */
 
 .footer {
-  @apply relative mt-[70px] h-[705px] text-[color:var(--white-color)];
+  @apply relative mt-[70px] h-[705px] text-[#D7DBFF];
 
   &Bg {
     @apply absolute inset-x-0 bottom-0 z-[-1] w-full;
@@ -43,7 +43,7 @@
       }
 
       .row {
-        @apply mt-1 flex items-center gap-7 text-[14px] font-medium italic leading-[21px] tracking-widest text-[color:var(--white-color)];
+        @apply mt-1 flex items-center gap-7 text-[14px] font-medium italic leading-[21px] tracking-widest;
 
         .email {
           @apply underline;
