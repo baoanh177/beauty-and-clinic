@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { useState } from "react";
-import Footer from "./components/Footer/Footer";
 import GoToTop from "@/components/GoToTop/GoToTop";
 
 const Home2Layout = () => {

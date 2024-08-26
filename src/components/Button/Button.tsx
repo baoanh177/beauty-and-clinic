@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { ReactNode } from "react";
-import css from "./button.module.scss"
 
 interface IButtonProps {
   children?: ReactNode;
