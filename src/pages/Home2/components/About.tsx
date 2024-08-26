@@ -9,10 +9,15 @@ const About = () => {
     <>
       <section className="pt-[70px] lg:pt-[159px]">
         <div className="container flex flex-col items-center gap-[100px] lg:flex-row lg:items-start lg:gap-[168px]">
-          <figure>
+          <figure data-aos="fade-right" data-aos-duration={1000} data-aos-once="true">
             <img src={image} alt="" />
           </figure>
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+          <div
+            className="flex flex-col items-center text-center lg:items-start lg:text-left"
+            data-aos="fade-left"
+            data-aos-duration={1000}
+            data-aos-once="true"
+          >
             <HeadingSubtitle>About Us</HeadingSubtitle>
             <HeadingTitle className="ml-[-.5px] mt-[12px] min-h-[91px] max-w-[460px]">We are the best beauty clinic</HeadingTitle>
             <HeadingDesc className="mt-[10px] min-h-[133px] max-w-[483px]">

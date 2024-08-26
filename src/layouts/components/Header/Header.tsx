@@ -8,14 +8,15 @@ import clsx from "clsx";
 interface IHeaderProps {
   setSidebar: Dispatch<SetStateAction<boolean>>;
   logo?: ILogoProps;
-  nav?: { type: "dark" | "light" }
+  nav?: { type: "dark" | "light" };
+  className?: string;
 }
 
-const Header = ({ setSidebar, logo, nav }: IHeaderProps) => {
+const Header = ({ setSidebar, logo, nav, className }: IHeaderProps) => {
   return (
     <>
       {/* Header */}
-      <header className={clsx(css.header, "container")}>
+      <header className={clsx(css.header, "container", className)}>
         <Logo {...logo} />
         <div className={css.actions}>
           <Navbar {...nav}/>

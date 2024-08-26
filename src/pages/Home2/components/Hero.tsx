@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
       <section className="relative -z-10 mt-[-104px]">
-        <img src={background} alt="" className="-z-10 min-h-[900px] object-cover max-w-[1440px] mx-auto" />
+        <img src={background} alt="" className="-z-10 min-h-[900px] object-cover w-full max-h-[918px]" />
         <div className="container absolute left-1/2 top-[200px] flex -translate-x-1/2 flex-col-reverse items-center gap-10 text-white lg:top-[307px] lg:flex-row lg:gap-0">
           <div className="flex flex-col text-center lg:text-left items-center lg:items-start">
             <h2 className="min-h-[133px] max-w-[502px] text-5xl font-semibold leading-[60px]">Your beauty center place</h2>

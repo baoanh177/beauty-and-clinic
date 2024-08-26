@@ -6,9 +6,9 @@ interface IMenuItem {
 
 export const menu: IMenuItem[] = [
   {
-    key: "home",
+    key: "home2",
     name: "Home",
-    path: "/",
+    path: "/home2",
   },
   {
     key: "about",

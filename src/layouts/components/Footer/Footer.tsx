@@ -8,11 +8,11 @@ import linkin from "@/assets/images/footer-in.png"
 import css from "./footer.module.scss"
 import clsx from "clsx";
 
-const Footer = () => {
+const Footer = ({ className }: { className?: string }) => {
   return (
     <>
       {/* Footer */}
-      <footer className={css.footer}>
+      <footer className={clsx(css.footer, className)}>
         <img src={background} alt="" className={css.footerBg} />
         <div className={clsx(css.content, "container")}>
           <div className={css.information}>
