@@ -5,7 +5,7 @@ import { useState } from "react";
 import Footer from "./components/Footer/Footer";
 import GoToTop from "@/components/GoToTop/GoToTop";
 
-const DefaultLayout = () => {
+const Home2Layout = () => {
   const [sidebar, setSidebar] = useState(false);
   const [goToTop, setGoToTop] = useState(false);
   window.onscroll = () => {
@@ -17,13 +17,13 @@ const DefaultLayout = () => {
   };
   return (
     <>
-      <Header setSidebar={setSidebar} nav={{ type: "dark" }}/>
+      <Header setSidebar={setSidebar} logo={{ font: "medium", type: "light"}} nav={{ type: "light" }}/>
       <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
       <Outlet />
       {goToTop && <GoToTop />}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
 
-export default DefaultLayout;
+export default Home2Layout;

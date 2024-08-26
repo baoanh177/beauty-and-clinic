@@ -1,0 +1,113 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+
+/* Header */
+.fixedHeader {
+  @apply fixed flex inset-x-0 top-[0] z-[99];
+}
+
+.header {
+  @apply flex !mt-[41px] h-[63px] items-center justify-between px-0 py-1;
+
+  .actions {
+    @apply mt-[-3px] flex items-center gap-[51px];
+
+    .navbar {
+      &.light {
+        @apply text-[#D8DCFF];
+        .menuItem {
+          &.active {
+            @apply text-[#D8DCFF];
+          }
+        }
+      }
+      &.dark {
+        @apply text-[color:var(--secondary-color)];
+        .menuItem {
+          &.active {
+            @apply text-[color:var(--active-color)];
+          }
+        }
+      }
+      .menu {
+        @apply flex items-center;
+
+        .menuItem {
+          @apply flex cursor-pointer items-center gap-[5px] text-left text-[16px] font-medium leading-[24px] tracking-[0.1em];
+
+          &:nth-child(1) {
+            @apply mr-[44px];
+          }
+
+          &:nth-child(2) {
+            @apply mb-[1px] mr-[43px];
+          }
+
+          &:nth-child(3) {
+            @apply mr-[46px];
+          }
+
+          &:nth-child(4) {
+            @apply mr-[46px];
+          }
+
+          &:not(.active):hover {
+            @apply text-inherit;
+          }
+
+          &.active {
+            .plusIcon {
+              @apply mt-[2px] block;
+            }
+          }
+          .plusIcon {
+            @apply hidden text-[8px];
+          }
+        }
+      }
+    }
+  }
+
+  .contactBtn {
+    @apply py-[14px] text-base font-semibold leading-6 tracking-[0.09em];
+  }
+
+  .menuIcon {
+    @apply hidden cursor-pointer text-[16px];
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fixedHeader {
+    @apply top-[15px];
+  }
+
+  .header {
+    @apply mt-5 h-[45px] px-5 py-0;
+
+    .actions {
+      @apply hidden;
+    }
+
+    .menuIcon {
+      @apply block;
+    }
+  }
+
+  .logo {
+    .brandName {
+      @apply invisible;
+    }
+
+    .logoIcon {
+      @apply h-[45px] w-[45px] text-[.7em];
+
+      > * {
+        @apply text-[.7em];
+      }
+    }
+  }
+}

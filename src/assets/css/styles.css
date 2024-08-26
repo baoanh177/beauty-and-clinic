@@ -1,13 +1,5 @@
 @import url("./variables.css");
 @import url("./common.css");
-@import url("./components/header.css");
-@import url("./components/sidebar.css");
-@import url("./components/hero.css");
-@import url("./components/service.css");
-@import url("./components/about.css");
-@import url("./components/team.css");
-@import url("./components/contact.css");
-@import url("./components/footer.css");
 /*
   Based on TailwindCSS recommendations,
   consider using classes instead of the `@apply` directive
@@ -21,4 +13,8 @@ body {
 }
 body::-webkit-scrollbar {
   @apply hidden;
+}
+
+.wrapper {
+  @apply relative mx-auto max-w-[1440px];
 }

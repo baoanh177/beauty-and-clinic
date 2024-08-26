@@ -1,0 +1,112 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+
+.contact {
+  @apply relative mt-[145px];
+
+  &Bg {
+    @apply absolute z-[-1] top-0  left-0 -translate-y-[22.5%];
+  }
+
+  &Inner {
+    @apply flex items-center gap-[100px];
+  }
+
+  .content {
+    @apply max-w-[520px];
+  }
+
+  .heading {
+    @apply flex flex-col gap-3;
+
+    .subtitle {
+      @apply text-left text-[16px] font-semibold leading-[20px] ml-[2px] text-[color:var(--primary-color)];
+    }
+
+    .title {
+      @apply min-h-[97px] max-w-[404px];
+    }
+
+    .desc {
+      @apply min-h-[28px];
+    }
+  }
+
+  .contactForm {
+    .formInner {
+      @apply mt-[43px] flex w-full flex-wrap gap-[38px_35px];
+
+      .group {
+        @apply flex grow gap-[35px];
+      }
+    }
+
+    input,
+    textarea {
+      @apply box-border w-full block h-[61.58px] grow basis-[400px] rounded-[15px] border border-solid border-[#d9ddfe] py-[17px] px-6;
+      background: var(--white-color);
+    }
+
+    textarea {
+      @apply h-[239px] mt-[1px] resize-none px-6 py-[25px];
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      @apply -translate-y-[2px] -translate-x-[.5px] leading-[24px] tracking-widest text-[color:var(--placeholder-color)];
+    }
+    textarea::placeholder {
+      @apply pt-[2px];
+    }
+    input:nth-child(3) {
+      @apply translate-y-[2px];
+    }
+
+    .group input:nth-child(2)::placeholder {
+      @apply pl-1;
+    }
+
+    textarea::placeholder {
+      @apply -translate-y-0.5;
+    }
+
+    .contactBtn {
+      @apply ml-px mt-[54.8px] min-h-[58px] min-w-[248px] pb-4 pl-[37px] pr-[38px] pt-[15px] shadow-[0px_17px_22px_0px_#ffedf6];
+    }
+  }
+
+  .contactImg {
+    @apply mt-[38px] ml-[1px];
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    &Inner {
+      @apply flex-col;
+    }
+
+    .heading {
+      @apply flex flex-col items-center text-center;
+
+      .subtitle {
+        @apply text-center;
+      }
+    }
+
+    .contactForm {
+      .formInner {
+        .group {
+          @apply flex-col;
+
+          input {
+            @apply basis-0;
+          }
+        }
+      }
+    }
+  }
+}

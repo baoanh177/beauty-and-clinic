@@ -1,8 +1,8 @@
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Hero from "./components/Hero"
-import Service from "./components/Service"
-import Team from "./components/Team"
+import About from "./components/About/About"
+import Contact from "./components/Contact/Contact"
+import Hero from "./components/Hero/Hero"
+import Service from "./components/Service/Service"
+import Team from "./components/Team/Team"
 
 const Home = () => {
   return <>

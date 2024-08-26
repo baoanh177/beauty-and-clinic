@@ -1,0 +1,4 @@
+.button {
+  @apply text-[color:var(--white-color)] text-[16px] font-semibold leading-[24px] tracking-widest text-center cursor-pointer px-[41px] rounded-[999px] border-[none] hover:opacity-95;
+  background: var(--primary-color);
+}

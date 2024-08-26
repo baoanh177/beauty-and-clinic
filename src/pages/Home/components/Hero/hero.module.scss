@@ -1,0 +1,55 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+
+.heroBackground {
+  @apply absolute z-[-1] left-0 top-[-41px];
+}
+
+.hero {
+  @apply relative !mt-[156px] pl-[39px] pb-[136px];
+
+  .heroInner {
+    @apply flex items-center gap-[22px];
+  }
+
+  &Content {
+    @apply shrink-0 mt-[-20px];
+  }
+
+  .title {
+    @apply text-[48px] font-semibold min-h-[128px] leading-[60px] text-left max-w-[430px];
+  }
+
+  .desc {
+    @apply max-w-[474px] text-[16px] font-medium leading-[24px] tracking-widest min-h-[54px] text-left text-[color:var(--title-color)];
+  }
+
+  .heroBtn {
+    @apply min-w-[200px] shadow-[0px_17px_22px_0px_#FFEDF6] min-h-[58.36px] mt-[27px] pt-[16.36px] pb-[15.06px] pr-10 leading-[26.94px];
+  }
+}
+
+.pagination {
+  @apply absolute bottom-[-8px] translate-x-[.5px] flex items-center gap-2 justify-center inset-x-0;
+
+  &Item {
+    @apply w-[14.82px] h-[3.09px] rounded-[99px] bg-[#eee];
+
+    &.active {
+      @apply w-[25.31px] h-[8.15px] bg-[color:var(--active-color)] rounded-[99px];
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    @apply mt-[100px];
+
+    .heroInner {
+      @apply flex-col;
+    }
+  }
+}

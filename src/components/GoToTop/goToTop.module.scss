@@ -1,0 +1,9 @@
+.goToTop {
+  @apply flex z-20 items-center justify-center fixed w-9 h-9 text-[color:var(--white-color)] text-[18px] cursor-pointer rounded-[5px] right-[66px] bottom-[170px];
+  background: var(--primary-color);
+}
+@media screen and (max-width: 1024px) {
+  .goToTop {
+    @apply right-[50px] bottom-[70px];
+  }
+}

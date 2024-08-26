@@ -1,0 +1,112 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+
+.footer {
+  @apply relative mt-[70px] h-[705px] text-[color:var(--white-color)];
+
+  &Bg {
+    @apply absolute inset-x-0 bottom-0 z-[-1] w-full;
+  }
+
+  &BottomBg {
+    @apply absolute inset-x-0 bottom-0 z-[-2] h-[125px];
+    background: #0d165c;
+  }
+
+  .content {
+    @apply flex items-center gap-[128px] pt-[225px];
+  }
+
+  .information {
+    @apply mt-[0px] shrink-0;
+
+    &Content {
+      @apply pl-[31px];
+
+      .info1 {
+        @apply mt-[34px] text-[16px] font-normal leading-[24px] tracking-widest;
+
+        strong {
+          @apply font-bold;
+        }
+      }
+
+      .phone {
+        @apply min-w-[140px];
+      }
+
+      .address {
+        @apply mt-[22px] ml-[1px] text-[14px] font-medium italic leading-[21px] tracking-widest;
+      }
+
+      .row {
+        @apply mt-1 flex items-center gap-7 text-[14px] font-medium italic leading-[21px] tracking-widest text-[color:var(--white-color)];
+
+        .email {
+          @apply underline;
+        }
+      }
+    }
+  }
+
+  .content .pages {
+    @apply flex gap-[206px] pl-[30px] pt-[3px];
+    justify-content: start;
+
+    > *:not(.information) {
+      @apply flex flex-col gap-[26px];
+    }
+  }
+
+  .content .colTitle {
+    @apply text-[18px] font-semibold leading-[27px] tracking-widest -translate-y-[2px] translate-x-[1px];
+  }
+
+  .content .pageList {
+    @apply flex flex-col gap-[11px];
+
+    .item {
+      @apply flex flex-nowrap text-[16px] font-normal leading-[24px] tracking-widest;
+    }
+  }
+
+  > .row {
+    @apply mt-[140px] flex justify-between;
+
+    .socials {
+      @apply flex items-center gap-[45px];
+    }
+
+    .copyright {
+      @apply text-[16px] font-normal leading-[24px] tracking-widest translate-x-[1px];
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    @apply h-[unset] px-0 py-14;
+    background: #0d165c;
+
+    .content {
+      @apply flex-col gap-[30px] pt-2.5;
+    }
+
+    > .row {
+      @apply mt-[30px] flex-col items-center gap-5;
+    }
+
+    .content .pages {
+      @apply w-full justify-between gap-5 p-0 px-5;
+    }
+
+    .information {
+      &Content {
+        @apply pl-0;
+      }
+    }
+  }
+}

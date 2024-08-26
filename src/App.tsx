@@ -3,6 +3,10 @@ import { renderRoutes } from "./routes/renderRoutes";
 import { routes } from "./routes/routes";
 
 const App = () => {
-  return <Routes>{renderRoutes(routes)}</Routes>;
+  return (
+    <div className="wrapper">
+      <Routes>{renderRoutes(routes)}</Routes>
+    </div>
+  );
 };
 export default App;
