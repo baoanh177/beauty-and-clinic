@@ -22,7 +22,7 @@ const Sidebar = ({ sidebar, setSidebar, items }: ISidebarProps) => {
       />
       <aside
         className={clsx(
-          "fixed bottom-0 left-0 top-0 z-50 w-[400px] max-w-[90%] -translate-x-full bg-white p-10 transition-transform",
+          "fixed bottom-0 left-0 top-0 z-50 w-[400px] max-w-[90%] -translate-x-full bg-white p-10 transition-transform overflow-hidden",
           sidebar && "translate-x-0",
         )}
       >

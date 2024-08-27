@@ -33,7 +33,7 @@
       }
 
       .address {
-        @apply mt-[22px] ml-[1px] text-[14px] font-medium italic leading-[21px] tracking-widest;
+        @apply ml-[1px] mt-[22px] text-[14px] font-medium italic leading-[21px] tracking-widest;
       }
 
       .row {
@@ -56,7 +56,7 @@
   }
 
   .content .colTitle {
-    @apply text-[18px] font-semibold leading-[27px] tracking-widest -translate-y-[2px] translate-x-[1px];
+    @apply -translate-y-[2px] translate-x-[1px] text-[18px] font-semibold leading-[27px] tracking-widest;
   }
 
   .content .pageList {
@@ -75,32 +75,40 @@
     }
 
     .copyright {
-      @apply text-[16px] font-normal leading-[24px] tracking-widest translate-x-[1px];
+      @apply translate-x-[1px] text-[16px] font-normal leading-[24px] tracking-widest;
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
   .footer {
-    @apply h-[unset] px-0 py-14;
-    background: #0d165c;
+    @apply h-[unset] bg-[#0d165c] px-0 py-14;
+    &Bg {
+      @apply hidden;
+    }
 
     .content {
-      @apply flex-col gap-[30px] pt-2.5;
+      @apply flex-wrap gap-[30px] pt-2.5;
     }
 
     > .row {
       @apply mt-[30px] flex-col items-center gap-5;
+      .socials {
+        @apply flex-wrap justify-center gap-y-5 gap-x-10;
+      }
+      .copyright {
+        @apply text-center;
+      }
     }
 
     .content .pages {
-      @apply w-full justify-between gap-5 p-0 px-5;
+      @apply grow flex-wrap justify-between gap-5 p-0 px-5;
     }
 
     .information {
-      @apply max-w-full;
+      @apply max-w-full flex-wrap;
       .row {
-        @apply flex-col;
+        @apply flex-wrap;
       }
       &Content {
         @apply pl-0;
@@ -111,7 +119,7 @@
 
 @media screen and (min-width: 1650px) {
   .footer {
-    @apply h-[unset] px-0 py-14 bg-[#0d165c];
+    @apply h-[unset] bg-[#0d165c] px-0 py-14;
 
     &Bg {
       @apply hidden;
