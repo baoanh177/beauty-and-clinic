@@ -24,7 +24,7 @@
   }
 
   .serviceList {
-    @apply flex gap-14 mt-[85px];
+    @apply flex gap-[55.5px] mt-[85px];
   }
 
   .card {
@@ -36,7 +36,7 @@
     }
 
     .title {
-      @apply min-h-[37px] text-[18px] font-semibold leading-[22.5px] text-center text-[color:var(--title-color)] pt-px;
+      @apply min-h-[37px] text-[18px] font-semibold leading-[22.5px] text-center text-[color:var(--title-color)] pt-px translate-x-[1px];
     }
 
     .desc {

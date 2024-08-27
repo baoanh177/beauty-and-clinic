@@ -22,12 +22,12 @@ const Contact = () => {
             <form action="" className={css.contactForm}>
               <div className={css.formInner}>
                 <div className={css.group}>
-                  <input type="text" placeholder="First name" />
-                  <input type="text" placeholder="Last name" />
+                  <input type="text" placeholder="First name" className={css.firstName} />
+                  <input type="text" placeholder="Last name" className={css.lastName} />
                 </div>
-                <input type="text" placeholder="Email address" />
-                <input type="text" placeholder="Subject message" />
-                <textarea name="" placeholder="Your inquiry here" id="" defaultValue={""} />
+                <input type="text" placeholder="Email address" className={css.email} />
+                <input type="text" placeholder="Subject message" className={css.message} />
+                <textarea name="" placeholder="Your inquiry here" className={css.inquiry} />
               </div>
               <button className={clsx(css.contactBtn, "button")}>Send Message</button>
             </form>

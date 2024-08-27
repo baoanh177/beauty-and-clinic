@@ -59,6 +59,7 @@
           }
 
           &.active {
+            translate: 1.6px 0;
             .plusIcon {
               @apply mt-[2px] block;
             }
