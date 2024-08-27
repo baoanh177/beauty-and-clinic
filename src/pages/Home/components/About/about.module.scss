@@ -31,17 +31,17 @@
     }
 
     .actions {
-      @apply flex items-center gap-11 mt-[52px];
+      @apply flex items-center gap-11 mt-[52px] translate-x-[-.5px];
 
       .learnMoreBtn {
-        @apply min-w-[200px] h-[58.36px] pt-[16.36px] pb-[15.06px];
+        @apply min-w-[200px] h-[58.36px] pt-[15px] pb-[15.06px] pl-[45px] shadow-[0px_17px_22px_0px_#FFEDF6];
       }
 
       .watchBtn {
         @apply flex items-center gap-[13px] mt-[1px];
 
         span {
-          @apply block text-[16px] font-semibold leading-[24px] tracking-widest text-[color:var(--secondary-color)];
+          @apply block font-semibold translate-y-[-1px] leading-[24px] tracking-widest text-[color:var(--secondary-color)];
         }
       }
     }

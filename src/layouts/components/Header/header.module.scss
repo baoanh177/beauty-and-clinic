@@ -61,7 +61,7 @@
           &.active {
             translate: 1.6px 0;
             .plusIcon {
-              @apply mt-[2px] block;
+              @apply mt-[2px] block translate-x-[-.4px] translate-y-[.2px] ;
             }
           }
           .plusIcon {
