@@ -33,9 +33,9 @@ export const menu1: IMenuItem[] = [
 ];
 export const menu2: IMenuItem[] = [
   {
-    key: "",
+    key: "home2",
     name: "Home",
-    path: "/",
+    path: "/home2",
   },
   {
     key: "about",
