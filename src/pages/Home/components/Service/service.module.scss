@@ -56,3 +56,14 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .service {
+    .card {
+      @apply basis-0;
+      .desc {
+        @apply min-w-[200px]
+      }
+    }
+  }
+}

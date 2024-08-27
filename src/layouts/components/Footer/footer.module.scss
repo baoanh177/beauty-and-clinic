@@ -104,6 +104,10 @@
     }
 
     .information {
+      @apply max-w-full;
+      .row {
+        @apply flex-col;
+      }
       &Content {
         @apply pl-0;
       }
