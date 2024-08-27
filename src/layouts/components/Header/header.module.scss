@@ -1,9 +1,3 @@
-/*
-  Based on TailwindCSS recommendations,
-  consider using classes instead of the `@apply` directive
-  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
-*/
-
 /* Header */
 .fixedHeader {
   @apply fixed flex inset-x-0 top-[0] z-[99];
