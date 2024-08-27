@@ -48,6 +48,9 @@
       @apply object-cover w-full h-full;
     }
   }
+  .aboutImageMobile {
+    @apply hidden mt-5;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -60,13 +63,16 @@
       @apply flex flex-col items-center text-center w-[unset];
     }
 
+    .aboutImageMobile {
+      @apply block;
+    }
     .aboutImage {
-      @apply w-auto max-w-full h-auto;
+      @apply hidden;
     }
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 500px) {
   .about {
     .content {
       .actions {

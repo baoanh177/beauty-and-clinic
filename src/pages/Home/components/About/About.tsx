@@ -1,7 +1,7 @@
-import playIcon from "@/assets/images/play-btn-icon.png"
-import image from "@/assets/images/about-img.png"
-import background from "@/assets/images/about-bg.png"
-import css from "./about.module.scss"
+import playIcon from "@/assets/images/play-btn-icon.png";
+import image from "@/assets/images/about-img.png";
+import background from "@/assets/images/about-bg.png";
+import css from "./about.module.scss";
 import clsx from "clsx";
 
 const About = () => {
@@ -21,6 +21,9 @@ const About = () => {
               </p>
               <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
             </div>
+            <figure className={css.aboutImageMobile}>
+              <img src={image} alt="" />
+            </figure>
             <div className={css.actions}>
               <button className={clsx(css.learnMoreBtn, "button")}>Learn More</button>
               <div className={css.watchBtn}>
@@ -29,7 +32,7 @@ const About = () => {
               </div>
             </div>
           </article>
-          <figure className={css. aboutImage}>
+          <figure className={css.aboutImage}>
             <img src={image} alt="" />
           </figure>
         </div>
