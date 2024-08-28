@@ -20,10 +20,12 @@ h2.title {
 .desc {
   @apply text-[16px] font-normal leading-[24px] tracking-widest text-[color:var(--secondary-color)];
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .container {
     @apply px-5 py-0;
   }
+}
+@media screen and (max-width: 1024px) {
   .button {
     @apply min-h-[40px] py-2.5;
   }

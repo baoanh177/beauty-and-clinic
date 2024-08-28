@@ -37,7 +37,6 @@ const Service = () => {
           <span className={clsx(css.subtitle, "subtitle")}>Main Services</span>
           <h2 className={clsx(css.title, "title")}>
             Learn services to focus
-            <br />
             on your beauty
           </h2>
           <p className={clsx(css.desc, "desc")}>

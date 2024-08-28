@@ -47,8 +47,7 @@
   }
 
   .content .pages {
-    @apply flex gap-[206px] pl-[30px] pt-[3px];
-    justify-content: start;
+    @apply flex gap-[206px] pl-[30px] pt-[3px] justify-start;
 
     > *:not(.information) {
       @apply flex flex-col gap-[26px];
@@ -76,6 +75,16 @@
 
     .copyright {
       @apply translate-x-[1px] text-[16px] font-normal leading-[24px] tracking-widest;
+    }
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .footer {
+    .content {
+      .pages {
+        @apply flex-col pr-0 !pl-0;
+      }
     }
   }
 }

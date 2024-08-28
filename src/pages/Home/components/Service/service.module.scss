@@ -5,48 +5,44 @@
     @apply flex flex-col items-center gap-[12px];
 
     .subtitle {
-      @apply text-[#ff64ae] text-[16px] font-semibold leading-[20px] text-center;
+      @apply text-center text-[16px] font-semibold leading-[20px] text-[#ff64ae];
     }
 
     .title {
-      @apply min-h-[97px] text-[36px] font-semibold leading-[45px] max-w-[732px] text-center text-[color:var(--title-color)];
+      @apply min-h-[97px] max-w-[732px] text-center text-[36px] font-semibold leading-[45px] text-[color:var(--title-color)];
     }
 
     .desc {
-      @apply text-[16px] mt-[-1px] font-normal leading-[24px] tracking-widest text-center text-[color:var(--secondary-color)] max-w-[848px];
+      @apply mt-[-1px] max-w-[848px] text-center text-[16px] font-normal leading-[24px] tracking-widest text-[color:var(--secondary-color)];
     }
   }
 
   .serviceList {
-    @apply flex gap-[55.5px] mt-[85px];
+    @apply mt-[85px] flex gap-[55.5px];
   }
 
   .card {
-    @apply flex flex-col items-center basis-[343px] min-h-[458px] shadow-[0px_25px_50px_25px_#f6f7ff] pl-[34px] pr-[35px] pt-[59px] pb-[52px] rounded-[42px];
+    @apply flex min-h-[458px] basis-[343px] flex-col items-center rounded-[42px] pb-[52px] pl-[34px] pr-[35px] pt-[59px] shadow-[0px_25px_50px_25px_#f6f7ff];
     background: white;
 
     .content {
-      @apply flex flex-col items-center gap-1.5 mt-[57px];
+      @apply mt-[57px] flex flex-col items-center gap-1.5;
     }
 
     .title {
-      @apply min-h-[37px] text-[18px] font-semibold leading-[22.5px] text-center text-[color:var(--title-color)] pt-px translate-x-[1px];
+      @apply min-h-[37px] translate-x-[1px] pt-px text-center text-[18px] font-semibold leading-[22.5px] text-[color:var(--title-color)];
     }
 
     .desc {
-      @apply min-w-[274px] text-[14px] font-normal mt-[1px] leading-[21px] tracking-widest text-center text-[color:var(--secondary-color)];
+      @apply mt-[1px] min-w-[274px] text-center text-[14px] font-normal leading-[21px] tracking-widest text-[color:var(--secondary-color)];
     }
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .service {
     .serviceList {
-      @apply gap-5 flex-wrap;
-    }
-
-    .card {
-      @apply grow;
+      @apply flex-wrap justify-center gap-5;
     }
   }
 }
@@ -54,9 +50,8 @@
 @media screen and (max-width: 1024px) {
   .service {
     .card {
-      @apply basis-0;
       .desc {
-        @apply min-w-[200px]
+        @apply min-w-[200px];
       }
     }
   }
