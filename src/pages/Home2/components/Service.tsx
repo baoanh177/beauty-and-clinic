@@ -1,6 +1,6 @@
 import HeadingSubtitle from "@/components/HeadingSubtitle";
 import HeadingTitle from "@/components/HeadingTitle";
-import HeadingDesc from "@/components/Logo/HeadingDesc";
+import HeadingDesc from "@/components/HeadingDesc";
 import serviceImg1 from "@/assets/images/home2-service-img-1.png";
 import serviceImg2 from "@/assets/images/home2-service-img-2.png";
 import serviceImg3 from "@/assets/images/home2-service-img-3.png";

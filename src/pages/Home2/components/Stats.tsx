@@ -1,6 +1,6 @@
 import background from "@/assets/images/home2-stats-bg.png";
 import HeadingTitle from "@/components/HeadingTitle";
-import HeadingDesc from "@/components/Logo/HeadingDesc";
+import HeadingDesc from "@/components/HeadingDesc";
 import StatsCard from "@/components/StatsCard";
 import statsIcon1 from "@/assets/images/home2-stats-icon1.png";
 import statsIcon2 from "@/assets/images/home2-stats-icon2.png";

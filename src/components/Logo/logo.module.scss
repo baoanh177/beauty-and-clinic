@@ -1,5 +1,5 @@
 .logo {
-  @apply flex items-center gap-[34px];
+  @apply flex items-center gap-[34.4px];
   filter: drop-shadow(0px 4px .5px  #00000040);
   height: 63px;
   width: 63px;
@@ -41,7 +41,7 @@
     }
 
     .insideIcon3 {
-      @apply absolute right-0 top-1/2 h-[1.1em] w-[4em] -translate-y-1/2 translate-x-[40%] rounded-[99px];
+      @apply absolute right-0 top-1/2 h-[1.11em] w-[4em] -translate-y-[.6em] translate-x-[41%] rounded-[99px];
     }
   }
 }

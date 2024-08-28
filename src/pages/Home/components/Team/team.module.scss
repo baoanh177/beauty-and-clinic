@@ -11,11 +11,11 @@
     .title {
       @apply min-h-[53px];
     }
+    .desc {
+      @apply min-h-[51px] translate-x-px -translate-y-px;
+    }
   }
 
-  .desc {
-    @apply min-h-[51px];
-  }
 
   .memberList {
     @apply flex items-center justify-center gap-[60px] mt-[83px];

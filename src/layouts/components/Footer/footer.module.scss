@@ -15,7 +15,7 @@
   }
 
   .information {
-    @apply mt-[0px] shrink-0;
+    @apply mt-[2px] shrink-0;
 
     &Content {
       @apply pl-[31px];
@@ -70,7 +70,7 @@
     @apply mt-[140px] flex justify-between;
 
     .socials {
-      @apply flex items-center gap-[45px];
+      @apply flex items-center gap-[45px] translate-y-px;
     }
 
     .copyright {

@@ -9,7 +9,7 @@
     }
 
     .title {
-      @apply min-h-[97px] max-w-[732px] text-center text-[36px] font-semibold leading-[45px] text-[color:var(--title-color)];
+      @apply min-h-[97px] max-w-[450px] text-center text-[36px] font-semibold leading-[45px] text-[color:var(--title-color)];
     }
 
     .desc {
@@ -30,7 +30,7 @@
     }
 
     .title {
-      @apply min-h-[37px] translate-x-[1px] pt-px text-center text-[18px] font-semibold leading-[22.5px] text-[color:var(--title-color)];
+      @apply min-h-[37px] translate-x-[.5px] translate-y-[-.5px] pt-px text-center text-[18px] font-semibold leading-[22.5px] text-[color:var(--title-color)];
     }
 
     .desc {

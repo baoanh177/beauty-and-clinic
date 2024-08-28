@@ -1,8 +1,8 @@
 .about {
-  @apply relative mt-[113px];
+  @apply relative mt-[113px] -z-10;
 
   &Bg {
-    @apply absolute right-[0] z-[-1] top-[0] -translate-y-[32.5%];
+    @apply absolute right-[0] z-[-1] top-[0] translate-y-[-333px];
   }
 
   .aboutInner {

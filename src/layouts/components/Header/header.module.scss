@@ -1,10 +1,5 @@
-/* Header */
-.fixedHeader {
-  @apply fixed flex inset-x-0 top-[0] z-[99];
-}
-
 .header {
-  @apply flex !mt-[41px] h-[63px] items-center justify-between px-0 py-1;
+  @apply flex !mt-[41px] h-[63px] items-center justify-between px-0 py-1 translate-x-[-.6px] translate-y-[.2px];
 
   .actions {
     @apply mt-[-3px] flex items-center gap-[51px];
@@ -30,18 +25,18 @@
         @apply flex items-center;
 
         .menuItem {
-          @apply flex cursor-pointer items-center gap-[5px] text-left text-[16px] font-medium leading-[24px] tracking-[0.1em];
+          @apply flex cursor-pointer items-center gap-[4.3px] text-left text-[16px] font-medium leading-[24px] tracking-[0.1em];
 
           &:nth-child(1) {
-            @apply mr-[44px];
+            @apply mr-[44.2px] tracking-[0.098em];
           }
 
           &:nth-child(2) {
-            @apply mb-[1px] mr-[43px];
+            @apply mb-[1px] mr-[43.5px];
           }
 
           &:nth-child(3) {
-            @apply mr-[46px];
+            @apply mr-[45px];
           }
 
           &:nth-child(4) {
@@ -53,9 +48,10 @@
           }
 
           &.active {
+            @apply font-semibold;
             translate: 1.6px 0;
             .plusIcon {
-              @apply mt-[2px] block translate-x-[-.4px] translate-y-[.2px] ;
+              @apply text-[9px] block translate-x-[-.4px] translate-y-[2.2px] ;
             }
           }
           .plusIcon {
@@ -67,7 +63,7 @@
   }
 
   .contactBtn {
-    @apply py-[14px] text-base font-semibold leading-6 tracking-[0.09em];
+    @apply py-[14px] text-base font-semibold leading-6 tracking-[0.1em] w-[157.6px];
   }
 
   .menuIcon {

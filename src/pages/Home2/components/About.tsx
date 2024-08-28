@@ -2,7 +2,7 @@ import image from "@/assets/images/home2-about-img.png";
 import Button from "@/components/Button/Button";
 import HeadingSubtitle from "@/components/HeadingSubtitle";
 import HeadingTitle from "@/components/HeadingTitle";
-import HeadingDesc from "@/components/Logo/HeadingDesc";
+import HeadingDesc from "@/components/HeadingDesc";
 
 const About = () => {
   return (
