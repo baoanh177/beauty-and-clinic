@@ -10,13 +10,13 @@ import SmallServiceCard from "@/components/SmallServiceCard";
 const Service = () => {
   return (
     <>
-      <section className="relative mt-[70px] lg:mt-[158px]">
+      <section className="relative mt-[70px] lg:mt-[158.8px]">
         <img src={background} alt="" className="absolute bottom-0 left-0 -z-10 translate-y-1/2 pt-5" />
         <div className="container flex flex-col" data-aos="fade-up" data-aos-duration={1000} data-aos-once="true">
           <div className="flex flex-col justify-center gap-[12px] text-center">
-            <HeadingSubtitle>Main Services</HeadingSubtitle>
+            <HeadingSubtitle className="translate-x-[.5px]">Main Services</HeadingSubtitle>
             <HeadingTitle className="min-h-[53px]">Our focus services</HeadingTitle>
-            <HeadingDesc>Lorem ipsum dolor sit amet.</HeadingDesc>
+            <HeadingDesc className="translate-y-[-.9px] translate-x-[.8px]">Lorem ipsum dolor sit amet.</HeadingDesc>
           </div>
           <div
             className="mt-[50px] flex flex-wrap justify-center gap-[30px] lg:mt-[76px] lg:gap-[66px]"
@@ -25,7 +25,7 @@ const Service = () => {
             data-aos-once="true"
           >
             <SmallServiceCard thumb={serviceImg1} desc="Lorem ipsum dolor sit amet, consectetur adipiscing." title="Beauty consultation" />
-            <SmallServiceCard thumb={serviceImg2} desc="Lorem ipsum dolor sit amet, consectetur adipiscing." title="Skin treatments" isActive />
+            <SmallServiceCard thumb={serviceImg2} desc="Lorem ipsum dolor sit amet, consectetur adipiscing." title="Skin treatments" />
             <SmallServiceCard thumb={serviceImg3} desc="Lorem ipsum dolor sit amet, consectetur adipiscing." title="Beauty product" />
           </div>
         </div>

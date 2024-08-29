@@ -10,15 +10,15 @@ import blogBg from "@/assets/images/blog-bg.png";
 const Blog = () => {
   return (
     <>
-      <section className="relative mt-[111px]">
+      <section className="relative mt-[110.9px]">
         <img src={blogBg} className="absolute left-0 right-0 top-0 -z-10 translate-y-[-145px] object-cover" alt="" />
         <div className="container">
           <div className="flex flex-col items-center gap-3 text-center" data-aos="fade-up" data-aos-duration={1000} data-aos-once="true">
             <HeadingSubtitle>The Blog</HeadingSubtitle>
-            <HeadingTitle className="min-h-[50px]">Our latest news</HeadingTitle>
-            <HeadingDesc className="min-h-[34px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</HeadingDesc>
+            <HeadingTitle className="min-h-[50px] translate-x-[.7px]">Our latest news</HeadingTitle>
+            <HeadingDesc className="min-h-[34px] translate-x-[.7px] translate-y-[-.4px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</HeadingDesc>
           </div>
-          <div className="mt-[79px] flex flex-wrap gap-[49px]" data-aos="fade-up" data-aos-duration={1000} data-aos-once="true">
+          <div className="mt-[78px] flex flex-wrap gap-[49px]" data-aos="fade-up" data-aos-duration={1000} data-aos-once="true">
             <BlogCard
               className="grow basis-[300px]"
               title="How much does a consultation cost at our clinic?"

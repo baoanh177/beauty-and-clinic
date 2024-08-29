@@ -22,7 +22,7 @@ const Home2Layout = () => {
         setSidebar={setSidebar}
         logo={{ font: "medium", type: "light" }}
         nav={{ type: "light", items: menu2 }}
-        className="!mt-[40px] translate-x-[0.7px]"
+        className="!mt-[40px]"
       />
       <Sidebar sidebar={sidebar} setSidebar={setSidebar} items={menu2} />
       <Outlet />

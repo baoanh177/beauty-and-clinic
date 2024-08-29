@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import css from "./header.module.scss";
 import { IMenuItem } from "@/layouts/data";
 
@@ -18,7 +18,7 @@ const Navbar = ({ type = "dark", items = []}: INavbarProps) => {
             const isActive = item.path === path;
             return (
               <li key={index} className={clsx(css.menuItem, isActive && css.active)}>
-                <span>{item.name}</span>
+                <Link to={item.path}>{item.name}</Link>
                 {isActive && <i className={clsx(css.plusIcon, "fa-solid fa-plus")}></i>}
               </li>
             );
