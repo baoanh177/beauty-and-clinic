@@ -21,38 +21,12 @@
     @apply mt-[85px] flex gap-[55.5px];
   }
 
-  .card {
-    @apply flex min-h-[458px] basis-[343px] flex-col items-center rounded-[42px] pb-[52px] pl-[34px] pr-[35px] pt-[59px] shadow-[0px_25px_50px_25px_#f6f7ff];
-    background: white;
-
-    .content {
-      @apply mt-[57px] flex flex-col items-center gap-1.5;
-    }
-
-    .title {
-      @apply min-h-[37px] translate-x-[.5px] translate-y-[-.5px] pt-px text-center text-[18px] font-semibold leading-[22.5px] text-[color:var(--title-color)];
-    }
-
-    .desc {
-      @apply mt-[1px] min-w-[274px] text-center text-[14px] font-normal leading-[21px] tracking-widest text-[color:var(--secondary-color)];
-    }
-  }
 }
 
 @media screen and (max-width: 1280px) {
   .service {
     .serviceList {
       @apply flex-wrap justify-center gap-5;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .service {
-    .card {
-      .desc {
-        @apply min-w-[200px];
-      }
     }
   }
 }

@@ -15,85 +15,13 @@
       @apply min-h-[51px] translate-x-px -translate-y-px;
     }
   }
-
-
-  .memberList {
-    @apply flex items-center justify-center gap-[60px] mt-[83px];
-
-    .card {
-      @apply flex flex-col items-center text-center pt-[94px] pb-24 rounded-[42px] transition-[padding,border-radius,box-shadow,background-color] duration-700;
-
-      &:hover {
-        @apply shadow-[0px_25px_50px_25px_#F6F7FF] px-[77px] bg-white;
-        .content {
-          @apply mt-[52px]
-        }
-      }
-
-      .avatar {
-        @apply shrink-0 w-[146px] h-[146px] overflow-hidden rounded-[50%];
-      }
-
-      .content {
-        @apply mt-[51px] mb-[50px] transition-[margin-top] ;
-      }
-
-      .role {
-        @apply text-base font-semibold leading-[20px] text-center text-[color:var(--primary-color)];
-      }
-
-      .name {
-        @apply min-h-[37px] text-[18px] font-semibold leading-[22.5px] text-center text-[color:var(--title-color)] mt-[12px] mb-[7px];
-      }
-
-      .desc {
-        @apply max-w-[270px] text-[14px] font-normal leading-[21px] tracking-widest text-center text-[color:var(--secondary-color)];
-      }
-
-      .socials {
-        @apply flex items-center gap-[34px] flex-wrap justify-center;
-      }
-
-      .socialItem {
-        @apply flex items-center justify-center shadow-[-2px_6px_16px_-1px_#e6e9fd] w-[49px] h-[49px] cursor-pointer transition-[background] duration-[0.2s] rounded-[50%];
-
-        &:hover {
-          background: #fafafa;
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 480px) {
-  .teams {
-    .memberList {
-      .card {
-        @apply w-full px-[10px];
-        &:hover {
-          @apply px-[10px];
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 1200px) {
-  .teams {
-    .memberList {
-      @apply flex-col gap-5;
-      .card {
-        @apply py-14
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1024px) {
   .teams {
-
     .heading {
       @apply text-center;
     }
-
     .desc {
       @apply text-center;
     }

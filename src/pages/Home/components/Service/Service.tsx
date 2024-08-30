@@ -46,7 +46,7 @@ const Service = () => {
         </div>
         <ul className={css.serviceList}>
           {services.map((service, index) => (
-            <ServiceCard key={index} {...service} css={css}/>
+            <ServiceCard key={index} {...service}/>
           ))}
         </ul>
       </section>
