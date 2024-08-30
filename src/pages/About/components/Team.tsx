@@ -1,7 +1,6 @@
 import HeadingDesc from "@/components/HeadingDesc";
 import HeadingSubtitle from "@/components/HeadingSubtitle";
 import HeadingTitle from "@/components/HeadingTitle";
-import MemberCard from "@/components/MemberCard";
 import background from "@/assets/images/about-page-team-bg.png";
 import MemberList from "@/components/MemberList";
 
