@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import css from "./header.module.scss";
 import { IMenuItem } from "@/layouts/data";
 
@@ -9,13 +9,12 @@ export interface INavbarProps {
 }
 
 const Navbar = ({ type = "dark", items = []}: INavbarProps) => {
-  const path = useLocation().pathname;
   return (
     <>
       <nav className={clsx(css.navbar, css[type])}>
         <ul className={css.menu}>
           {items.map((item, index) => {
-            const isActive = item.path === path;
+            const isActive = item.path === "/"
             return (
               <li key={index} className={clsx(css.menuItem, isActive && css.active)}>
                 <Link to={item.path}>{item.name}</Link>

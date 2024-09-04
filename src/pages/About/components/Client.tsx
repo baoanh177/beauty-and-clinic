@@ -11,7 +11,7 @@ const Client = () => {
   return (
     <>
       <section
-        className="container !mt-[124.3px] pb-[53px]"
+        className="container !mt-[124px] pb-[53.5px]"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-once="true"

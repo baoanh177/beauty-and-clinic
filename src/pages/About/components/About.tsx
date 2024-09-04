@@ -27,7 +27,6 @@ const About = () => {
           data-aos="fade-left"
           data-aos-duration={1000}
           data-aos-once="true"
-          data-aos-anchor-placement="center-center"
         >
           <img src={image} alt="" />
           <img

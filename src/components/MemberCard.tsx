@@ -29,7 +29,7 @@ const MemberCard = ({ role, name, desc, avatar, className }: IMemberCardProps) =
         <div className="h-[146px] w-[146px] shrink-0 overflow-hidden rounded-[50%]">
           <img src={avatar} alt="" />
         </div>
-        <div className="mb-[50px] mt-[51px] transition-[margin-top] group-hover:mt-[52px]">
+        <div className="mb-[50px] mt-[51px] transition-[margin-top] group-hover:mt-[51px]">
           <span className="text-center text-base font-semibold leading-[20px] text-[color:var(--primary-color)]">{role}</span>
           <h3 className="mb-[7px] mt-[12px] min-h-[37px] text-center text-[18px] font-semibold leading-[22.5px] text-[color:var(--title-color)]">
             {name}

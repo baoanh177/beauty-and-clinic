@@ -7,7 +7,7 @@ import clsx from "clsx";
 const Slogan = () => {
   return (
     <>
-      <section className={clsx("relative mt-[151px] flex h-[529px] items-center justify-center pt-[0]", "md:block md:pt-[165px]")}>
+      <section className={clsx("relative mt-[151px] flex h-[528.7px] items-center justify-center pt-[0]", "md:block md:pt-[164.5px]")}>
         <img src={background} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
         <article
           className="container flex flex-col items-center gap-3 text-center"

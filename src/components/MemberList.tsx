@@ -28,7 +28,7 @@ const MemberList = ({ className }: { className?: string }) => {
   ];
   return (
     <>
-      <ul className={clsx("mt-[83px] flex items-center justify-center gap-[60px] max-[1200px]:flex-col max-[1200px]:gap-5", className)}>
+      <ul className={clsx("pt-[83px] flex items-center justify-center gap-[60px] max-[1200px]:flex-col max-[1200px]:gap-5", className)}>
         {members.map((mem, index) => (
           <MemberCard key={index} {...mem} className="pt-[90px]" />
         ))}
