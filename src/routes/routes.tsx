@@ -7,6 +7,9 @@ import About from "@/pages/About";
 import Service from "@/pages/Service";
 import Gallery from "@/pages/Gallery";
 import Team from "@/pages/Team";
+import Blog from "@/pages/Blog";
+import BlogLayout from "@/layouts/BlogLayout";
+import Contact from "@/pages/Contact";
 
 export const routes: IRoute[] = [
   {
@@ -33,6 +36,10 @@ export const routes: IRoute[] = [
         path: "/team",
         element: () => <Team />,
       },
+      {
+        path: "/contact",
+        element: () => <Contact />,
+      },
     ],
   },
   {
@@ -42,6 +49,16 @@ export const routes: IRoute[] = [
       {
         path: "/home2",
         element: () => <Home2 />,
+      },
+    ]
+  },
+  {
+    path: "/",
+    layout: () => <BlogLayout />,
+    pages: [
+      {
+        path: "/blog",
+        element: () => <Blog />,
       },
     ]
   }

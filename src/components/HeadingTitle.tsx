@@ -9,9 +9,7 @@ interface IHeadingTitleProps {
 const HeadingTitle = ({ children, className }: IHeadingTitleProps) => {
   return (
     <>
-      <h2 className={clsx("text-4xl font-semibold leading-[45px] text-[#091156]", className)}>
-        {children}
-      </h2>
+      <h2 className={clsx("text-2xl font-semibold max-md:!min-h-0 leading-[35px] text-[#091156] md:text-4xl md:leading-[45px]", className)}>{children}</h2>
     </>
   );
 };

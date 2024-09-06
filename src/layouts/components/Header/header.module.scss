@@ -1,5 +1,5 @@
 .header {
-  @apply flex !mt-[41px] h-[63px] items-center justify-between px-0 py-1 translate-x-[-.6px] translate-y-[.2px];
+  @apply flex !mt-[41px] h-[63px] items-center justify-between px-0 py-1 translate-x-[-.6px] translate-y-[.2px] z-50;
 
   .actions {
     @apply mt-[-3px] flex items-center gap-[51px];

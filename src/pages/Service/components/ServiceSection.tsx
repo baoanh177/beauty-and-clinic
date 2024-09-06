@@ -11,8 +11,8 @@ import clsx from "clsx";
 const ServiceSection = () => {
   return (
     <>
-      <section className="relative pt-[60px] md:pt-[125.5px]">
-        <img src={background} alt="" className="absolute -z-10 top-[95px] left-0 right-0 object-cover" />
+      <section className="relative mt-[60px] md:mt-[125.5px]">
+        <img src={background} alt="" className="absolute -z-10 top-[-30px] left-0 right-0 object-cover" />
         <div className="container xl:!max-w-[1100px]">
           <div className="flex flex-col items-center gap-3 text-center">
             <HeadingSubtitle children="Our Services" />

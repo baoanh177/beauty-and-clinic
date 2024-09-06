@@ -9,7 +9,7 @@ interface IHeadingDescProps {
 const HeadingDesc = ({ children, className }: IHeadingDescProps) => {
   return (
     <>
-      <p className={clsx("leading-6 tracking-widest text-[#8B8B8B]", className)}>{children}</p>
+      <p className={clsx("text-sm md:text-base leading-6 tracking-widest text-[#8B8B8B]", className)}>{children}</p>
     </>
   );
 };

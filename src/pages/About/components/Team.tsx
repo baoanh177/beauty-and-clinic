@@ -18,7 +18,7 @@ const Team = () => {
             </HeadingDesc>
           </div>
           <MemberList
-            className="mt-[83.5px]"
+            className="pt-[83.5px]"
             data-aos="fade-left"
             data-aos-duration={1000}
             data-aos-once="true"

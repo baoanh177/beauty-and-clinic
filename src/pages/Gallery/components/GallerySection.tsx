@@ -15,7 +15,7 @@ import clsx from "clsx";
 const GallerySection = () => {
   return (
     <>
-      <section className="pt-[125px]">
+      <section className="mt-[125px]">
         <div className="container">
           <div className={clsx("flex flex-col items-center justify-between pr-5 text-center", "lg:flex-row lg:text-left")}>
             <div className="flex flex-col gap-3">

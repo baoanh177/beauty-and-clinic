@@ -29,47 +29,6 @@
     }
   }
 
-  .contactForm {
-    .formInner {
-      @apply mt-[44px] ml-px flex w-full flex-wrap gap-[39px_35px];
-
-      .group {
-        @apply flex grow gap-[35px];
-      }
-    }
-
-    input,
-    textarea {
-      @apply box-border w-full block h-[61px] grow basis-[400px] rounded-[15px] border border-solid border-[#d9ddfe] py-[17px] px-6;
-      background: var(--white-color);
-    }
-
-    textarea {
-      @apply h-[239px] mt-[-1px] resize-none px-6 py-[25px];
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      @apply -translate-y-[2px] -translate-x-[.5px] leading-[24px] tracking-widest text-[color:var(--placeholder-color)];
-    }
-    textarea::placeholder {
-      @apply pt-[2px];
-    }
-    .firstName::placeholder {
-      @apply translate-y-[-1px]
-    }
-    .lastName::placeholder {
-      @apply translate-y-[-0.5px] translate-x-[3px]
-    }
-    .firstName::placeholder {
-      @apply translate-y-[-1px]
-    }
-
-    .contactBtn {
-      @apply ml-[2px] mt-[55px] min-h-[58px] min-w-[248px] pb-4 pl-[37px] pr-[38px] pt-[13px] shadow-[0px_17px_22px_0px_#ffedf6];
-    }
-  }
-
   .contactImg {
     @apply mt-[38px] translate-x-[.95px] translate-y-[.5px] shrink-0;
   }
@@ -86,18 +45,6 @@
 
       .subtitle {
         @apply text-center;
-      }
-    }
-
-    .contactForm {
-      .formInner {
-        .group {
-          @apply flex-col;
-
-          input {
-            @apply basis-0;
-          }
-        }
       }
     }
   }

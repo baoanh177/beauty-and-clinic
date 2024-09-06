@@ -4,6 +4,7 @@ import Button from "@/components/Button/Button";
 import { Dispatch, SetStateAction } from "react";
 import css from "./header.module.scss";
 import clsx from "clsx";
+import { useNavigate } from "react-router-dom";
 
 interface IHeaderProps {
   setSidebar: Dispatch<SetStateAction<boolean>>;
@@ -13,6 +14,7 @@ interface IHeaderProps {
 }
 
 const Header = ({ setSidebar, logo, nav, className }: IHeaderProps) => {
+  const navigate = useNavigate()
   return (
     <>
       {/* Header */}
@@ -20,7 +22,7 @@ const Header = ({ setSidebar, logo, nav, className }: IHeaderProps) => {
         <Logo {...logo} />
         <div className={css.actions}>
           <Navbar {...nav}/>
-          <Button className={css.contactBtn}>Contact</Button>
+          <Button className={css.contactBtn} onClick={() => navigate("/contact")}>Contact</Button>
         </div>
         <div className={css.menuIcon} onClick={() => setSidebar(true)}>
           <i className="fa-solid fa-bars" />

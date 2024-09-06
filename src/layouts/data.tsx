@@ -4,38 +4,21 @@ export interface IMenuItem {
   path: string;
 }
 
-export const menu1: IMenuItem[] = [
+export const menu: IMenuItem[] = [
   {
     key: "",
     name: "Home",
     path: "/",
   },
   {
-    key: "about",
-    name: "About",
-    path: "/about",
-  },
-  {
-    key: "service",
-    name: "Service",
-    path: "/service",
-  },
-  {
-    key: "gallery",
-    name: "Gallery",
-    path: "/gallery",
-  },
-  {
-    key: "blog",
-    name: "Blog",
-    path: "/blog",
-  },
-];
-export const menu2: IMenuItem[] = [
-  {
     key: "home2",
-    name: "Home",
+    name: "Home 2",
     path: "/home2",
+  },
+  {
+    key: "team",
+    name: "Team",
+    path: "/team",
   },
   {
     key: "about",

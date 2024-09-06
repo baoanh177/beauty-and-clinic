@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { useState } from "react";
 import GoToTop from "@/components/GoToTop/GoToTop";
 import Footer from "./components/Footer/Footer";
-import { menu2 } from "./data";
+import { menu } from "./data";
 
 const Home2Layout = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -21,10 +21,10 @@ const Home2Layout = () => {
       <Header
         setSidebar={setSidebar}
         logo={{ font: "medium", type: "light" }}
-        nav={{ type: "light", items: menu2 }}
+        nav={{ type: "light", items: menu }}
         className="!mt-[40px]"
       />
-      <Sidebar sidebar={sidebar} setSidebar={setSidebar} items={menu2} />
+      <Sidebar sidebar={sidebar} setSidebar={setSidebar} items={menu} />
       <Outlet />
       {goToTop && <GoToTop />}
       <Footer className="mt-[132px]" />

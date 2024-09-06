@@ -10,7 +10,7 @@ const About = () => {
     <>
       <div className="container !mt-[125.5px]">
         <div
-          className="flex flex-col"
+          className="flex text-center xl:text-left items-center xl:items-start  flex-col"
           data-aos="fade-right"
           data-aos-duration={1000}
           data-aos-once="true"
