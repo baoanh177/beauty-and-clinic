@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { useState } from "react";
 import Footer from "./components/Footer/Footer";
 import GoToTop from "@/components/GoToTop/GoToTop";
-import { menu1 } from "./data";
+import { menu } from "./data";
 
 const DefaultLayout = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -18,8 +18,8 @@ const DefaultLayout = () => {
   };
   return (
     <>
-      <Header setSidebar={setSidebar} nav={{ type: "dark", items: menu1 }}/>
-      <Sidebar sidebar={sidebar} setSidebar={setSidebar} items={menu1} />
+      <Header setSidebar={setSidebar} nav={{ type: "dark", items: menu }}/>
+      <Sidebar sidebar={sidebar} setSidebar={setSidebar} items={menu} />
       <Outlet />
       {goToTop && <GoToTop />}
       <Footer />
