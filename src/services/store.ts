@@ -1,4 +1,4 @@
-import { configureStore, legacy_createStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import { reducers } from "./reducers";
 
 const store = configureStore({

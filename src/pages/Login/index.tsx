@@ -14,11 +14,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 
 const Login = () => {
-  const [searchParams, setSearchParams] = useSearchParams()
+  const [searchParams] = useSearchParams()
   const queryClient = useQueryClient()
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate()
-  const { status, message } = useSelector((state: RootStateType) => state.auth);
+  const { message } = useSelector((state: RootStateType) => state.auth);
   const {
     register,
     formState: { errors },

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { login, logout, register } from "./auth.thunk";
+import { login, register } from "./auth.thunk";
 import { EFetchStatus } from "@/shared/enum";
 import { commonStaticReducers } from "@/services/shared";
 

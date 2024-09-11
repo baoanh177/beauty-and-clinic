@@ -9,14 +9,13 @@ import { register as registerAccount } from "@/services/store/auth/auth.thunk";
 import clsx from "clsx";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { useQueryClient } from "react-query";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate()
-  const { status, message } = useSelector((state: RootStateType) => state.auth);
+  const { message } = useSelector((state: RootStateType) => state.auth);
   const {
     register,
     getValues,
