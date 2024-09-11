@@ -10,56 +10,81 @@ import Team from "@/pages/Team";
 import Blog from "@/pages/Blog";
 import BlogLayout from "@/layouts/BlogLayout";
 import Contact from "@/pages/Contact";
+import Login from "@/pages/Login";
+import GlobalMiddleware from "@/middlewares/GlobalMiddleware";
+import AuthMiddleware from "@/middlewares/AuthMiddleware";
+import Profile from "@/pages/profile";
+import Register from "@/pages/Register";
 
 export const routes: IRoute[] = [
   {
     path: "/",
-    layout: () => <DefaultLayout />,
+    middleware: () => <GlobalMiddleware />,
     pages: [
       {
         path: "/",
-        element: () => <Home />,
+        layout: () => <DefaultLayout />,
+        pages: [
+          {
+            path: "/",
+            element: () => <Home />,
+          },
+          {
+            path: "/about",
+            element: () => <About />,
+          },
+          {
+            path: "/service",
+            element: () => <Service />,
+          },
+          {
+            path: "/gallery",
+            element: () => <Gallery />,
+          },
+          {
+            path: "/team",
+            element: () => <Team />,
+          },
+          {
+            path: "/contact",
+            element: () => <Contact />,
+          },
+          {
+            path: "/login",
+            element: () => <Login />,
+          },
+          {
+            path: "/register",
+            element: () => <Register />,
+          },
+        ],
       },
       {
-        path: "/about",
-        element: () => <About />,
+        path: "/profile",
+        layout: () => <DefaultLayout />,
+        middleware: () => <AuthMiddleware />,
+        element: () => <Profile />,
       },
       {
-        path: "/service",
-        element: () => <Service />,
+        path: "/",
+        layout: () => <Home2Layout />,
+        pages: [
+          {
+            path: "/home2",
+            element: () => <Home2 />,
+          },
+        ],
       },
       {
-        path: "/gallery",
-        element: () => <Gallery />,
-      },
-      {
-        path: "/team",
-        element: () => <Team />,
-      },
-      {
-        path: "/contact",
-        element: () => <Contact />,
+        path: "/",
+        layout: () => <BlogLayout />,
+        pages: [
+          {
+            path: "/blog",
+            element: () => <Blog />,
+          },
+        ],
       },
     ],
   },
-  {
-    path: "/",
-    layout: () => <Home2Layout />,
-    pages: [
-      {
-        path: "/home2",
-        element: () => <Home2 />,
-      },
-    ]
-  },
-  {
-    path: "/",
-    layout: () => <BlogLayout />,
-    pages: [
-      {
-        path: "/blog",
-        element: () => <Blog />,
-      },
-    ]
-  }
 ];

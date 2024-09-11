@@ -41,6 +41,11 @@ const Navbar = ({ type = "dark" }: INavbarProps) => {
                     Team
                   </Link>
                 </li>
+                <li>
+                  <Link to="/contact" className="block px-4 py-2 hover:bg-gray-100">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
           </li>
