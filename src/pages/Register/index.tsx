@@ -12,7 +12,7 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { ContentWrapper, ErrorMessage, Form, FormGroup, ImageWrapper, OptionWrapper, Section } from "./styles/index.style";
+import { ContentWrapper, ErrorMessage, Form, FormGroup, ImageWrapper, OptionWrapper, Section } from "./style";
 
 const Register = () => {
   const dispatch = useDispatch<AppDispatch>();

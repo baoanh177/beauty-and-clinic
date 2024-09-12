@@ -3,7 +3,7 @@ import HeadingDesc from "@/components/HeadingDesc";
 import HeadingSubtitle from "@/components/HeadingSubtitle";
 import HeadingTitle from "@/components/HeadingTitle";
 import background from "@/assets/images/gallery-page-quota-bg.png";
-import { Background, ContentWrapper, Section } from "./styles/quota.style";
+import { Background, ContentWrapper, Section } from "./style";
 import Container from "@/components/Container";
 
 const Quota = () => {

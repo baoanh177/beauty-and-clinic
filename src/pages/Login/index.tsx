@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 import { useQueryClient } from "react-query";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { ContentWrapper, ErrorMessage, Form, FormGroup, ImageWrapper, OptionWrapper, Section } from "./styles/index.style";
+import { ContentWrapper, ErrorMessage, Form, FormGroup, ImageWrapper, OptionWrapper, Section } from "./style";
 
 const Login = () => {
   const [searchParams] = useSearchParams();

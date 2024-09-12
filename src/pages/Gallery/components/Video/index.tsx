@@ -2,7 +2,7 @@ import background from "@/assets/images/gallery-page-video-bg.png";
 import HeadingDesc from "@/components/HeadingDesc";
 import HeadingTitle from "@/components/HeadingTitle";
 import icon from "@/assets/images/play-btn-inside-icon.png";
-import { Background, ContentWrapper, IconWrapper, PlayIcon, Section } from "./styles/video.style";
+import { Background, ContentWrapper, IconWrapper, PlayIcon, Section } from "./style";
 
 const Video = () => {
   return (

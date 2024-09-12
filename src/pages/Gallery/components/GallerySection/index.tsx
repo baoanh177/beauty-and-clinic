@@ -10,7 +10,7 @@ import image6 from "@/assets/images/gallery-page-gallery-img-6.png";
 import image7 from "@/assets/images/gallery-page-gallery-img-7.png";
 import image8 from "@/assets/images/gallery-page-gallery-img-8.png";
 import image9 from "@/assets/images/gallery-page-gallery-img-9.png";
-import { HeadingInner, HeadingWrapper, Image, ImageList, ImageWrapper, Section } from "./styles/gallery.style";
+import { HeadingInner, HeadingWrapper, Image, ImageList, ImageWrapper, Section } from "./style";
 import Container from "@/components/Container";
 
 const GallerySection = () => {
