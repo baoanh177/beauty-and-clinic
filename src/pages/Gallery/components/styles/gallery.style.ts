@@ -1,4 +1,4 @@
-import tw, { css, styled } from "twin.macro";
+import tw, { styled } from "twin.macro";
 
 export const Section = tw.section`mt-[125px]`
 export const HeadingWrapper = tw.div`flex flex-col items-center justify-between pr-5 text-center lg:flex-row lg:text-left`;
