@@ -4,14 +4,15 @@ import HeadingTitle from "@/components/HeadingTitle";
 import HeadingDesc from "@/components/HeadingDesc";
 import icon from "@/assets/images/home2-learn-more-icon.png";
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const Treatment = () => {
   return (
     <>
       <section className="mt-[92px]">
-        <div
+        <Container
           className={clsx(
-            "container flex flex-col items-center gap-[20px]",
+            "flex flex-col items-center gap-[20px]",
             "md:flex-row md:items-start md:gap-[40px] lg:gap-[100px] xl:gap-[190px]",
           )}
         >
@@ -30,7 +31,7 @@ const Treatment = () => {
             </div>
           </article>
           <img src={image} alt="" />
-        </div>
+        </Container>
       </section>
     </>
   );

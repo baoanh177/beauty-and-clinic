@@ -4,6 +4,7 @@ import serviceThumb3 from "@/assets/images/service-thumb-3.png";
 import ServiceCard from "@/components/ServiceCard";
 import css from "./service.module.scss"
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 interface IService {
   name: string;
@@ -32,7 +33,7 @@ const Service = () => {
   return (
     <>
       {/* Service */}
-      <section className={clsx(css.service, "container")}>
+      <Container className={css.service}>
         <div className={css.heading}>
           <span className={clsx(css.subtitle, "subtitle")}>Main Services</span>
           <h2 className={clsx(css.title, "title")}>
@@ -49,7 +50,7 @@ const Service = () => {
             <ServiceCard key={index} {...service}/>
           ))}
         </ul>
-      </section>
+      </Container>
     </>
   );
 };

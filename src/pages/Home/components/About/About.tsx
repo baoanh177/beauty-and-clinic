@@ -3,6 +3,7 @@ import image from "@/assets/images/about-img.png";
 import background from "@/assets/images/about-bg.png";
 import css from "./about.module.scss";
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
       {/* About */}
       <section className={css.about}>
         <img src={background} className={css.aboutBg} alt="" />
-        <div className={clsx(css.aboutInner, "container")}>
+        <Container className={css.aboutInner}>
           <article className={css.content}>
             <span className={clsx(css.subtitle, "subtitle")}>About Us</span>
             <h2 className={clsx(css.title, "title")}>We are the best beauty clinic</h2>
@@ -35,7 +36,7 @@ const About = () => {
           <figure className={css.aboutImage}>
             <img src={image} alt="" />
           </figure>
-        </div>
+        </Container>
       </section>
     </>
   );

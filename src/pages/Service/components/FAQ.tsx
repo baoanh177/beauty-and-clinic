@@ -1,3 +1,4 @@
+import Container from "@/components/Container";
 import FAQItem from "@/components/FAQItem";
 import HeadingTitle from "@/components/HeadingTitle";
 
@@ -5,7 +6,7 @@ const FAQ = () => {
   return (
     <>
       <section className="mt-[116px] pb-[43px]">
-        <div className="container lg:max-w-[972px]">
+        <Container className="lg:max-w-[972px]">
           <div className="relative min-h-[66px] translate-y-[.5px] text-center">
             <HeadingTitle className="ml-[9px] translate-x-[.4px]">Services FAQ’s</HeadingTitle>
             <div className="absolute bottom-[0] left-1/2 h-[4.7px] w-[40px] -translate-x-1/2 rounded-full bg-[#FF64AE]"></div>
@@ -85,7 +86,7 @@ const FAQ = () => {
               }}
             </FAQItem>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

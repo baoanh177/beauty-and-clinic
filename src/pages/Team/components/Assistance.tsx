@@ -5,12 +5,13 @@ import HeadingTitle from "@/components/HeadingTitle";
 import image1 from "@/assets/images/team-page-assistance-img-1.png";
 import image2 from "@/assets/images/team-page-assistance-img-2.png";
 import image3 from "@/assets/images/team-page-assistance-img-3.png";
+import Container from "@/components/Container";
 
 const Assistance = () => {
   return (
     <>
       <section className="mt-[154px]">
-        <div className="container">
+        <Container>
           <div className="flex flex-col items-center">
             <HeadingSubtitle children="Assistance Team" />
             <HeadingTitle children="Meet the pro assistance" className="mt-3 min-h-[57px]" />
@@ -36,7 +37,7 @@ const Assistance = () => {
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque."
             />
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

@@ -4,15 +4,16 @@ import HeadingTitle from "@/components/HeadingTitle";
 import image from "@/assets/images/mission-img.png";
 import background from "@/assets/images/mission-bg.png";
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const Mission = () => {
   return (
     <>
       <section className={clsx("relative mt-[118px]")}>
         <img src={background} alt="" className="absolute left-0 top-[-358px] -z-10" />
-        <div
+        <Container
           className={clsx(
-            "container flex flex-col text-center items-center",
+            "flex flex-col text-center items-center",
             "min-[900px]:items-start min-[900px]::gap-[50px] min-[900px]:flex-row min-[900px]:text-left",
             "lg:gap-[137px]",
           )}
@@ -37,7 +38,7 @@ const Mission = () => {
           >
             <img src={image} alt="" />
           </figure>
-        </div>
+        </Container>
       </section>
     </>
   );

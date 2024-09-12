@@ -1,4 +1,5 @@
 import avatar from "@/assets/images/avatar.avif";
+import Container from "@/components/Container";
 import UserName from "@/components/UserName";
 import { AppDispatch } from "@/services/store";
 import { setProfile } from "@/services/store/auth/auth.slice";
@@ -13,7 +14,7 @@ const Content = () => {
   return (
     <>
       <section className="bg-blueGray-200 relative pb-16">
-        <div className="container mx-auto px-4">
+        <Container className="mx-auto px-4">
           <div className="relative -mt-64 mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
             <div className="px-6">
               <div className="flex flex-wrap items-start justify-center">
@@ -94,7 +95,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

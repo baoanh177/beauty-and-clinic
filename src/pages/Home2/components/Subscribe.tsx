@@ -1,12 +1,13 @@
 import phoneIcon from "@/assets/images/phone-icon.png";
 import Button from "@/components/Button/Button";
+import Container from "@/components/Container";
 import HeadingTitle from "@/components/HeadingTitle";
 
 const Subscribe = () => {
   return (
     <>
       <section className="mt-[171px]">
-        <div className="container flex flex-col items-center gap-[90px] xl:flex-row">
+        <Container className="flex flex-col items-center gap-[90px] xl:flex-row">
           <div className="flex flex-col items-center text-center xl:items-start xl:text-left gap-3">
             <HeadingTitle className="ml-px h-[50px]">Request call services</HeadingTitle>
             <p className="w-[391px] leading-6 tracking-widest text-[#8B8B8B] translate-y-[-.9px] ml-[.9px]">
@@ -29,7 +30,7 @@ const Subscribe = () => {
             </div>
           </div>
           <Button className="mt-[-60px] block w-full sm:hidden">Request</Button>
-        </div>
+        </Container>
       </section>
     </>
   );

@@ -3,6 +3,7 @@ import image from "@/assets/images/contact-img.png";
 import css from "./contact.module.scss"
 import clsx from "clsx";
 import ContactForm from "@/components/ContactForm";
+import Container from "@/components/Container";
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
       {/* Contact */}
       <section className={css.contact}>
         <img src={background} className={css.contactBg} alt="" />
-        <div className={clsx(css.contactInner, "container")}>
+        <Container className={css.contactInner}>
           <figure className={css.contactImg}>
             <img src={image} alt="" />
           </figure>
@@ -22,7 +23,7 @@ const Contact = () => {
             </div>
             <ContactForm />
           </article>
-        </div>
+        </Container>
       </section>
     </>
   );

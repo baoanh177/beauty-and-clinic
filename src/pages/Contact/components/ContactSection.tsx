@@ -4,13 +4,14 @@ import HeadingTitle from "@/components/HeadingTitle";
 import image from "@/assets/images/contact-page-contact-img.png";
 import background from "@/assets/images/contact-page-contact-bg.png";
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const ContactSection = () => {
   return (
     <>
       <section className="relative mt-[125.5px]">
         <img src={background} alt="" className="absolute -z-10 right-0 top-[83px]"/>
-        <div className="container">
+        <Container>
           <div className="flex flex-col gap-[20px] max-lg:items-center max-lg:text-center lg:flex-row lg:gap-[98px]">
             <div className="flex flex-col gap-3">
               <HeadingSubtitle children="Contact Us" />
@@ -81,7 +82,7 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

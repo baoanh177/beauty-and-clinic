@@ -6,13 +6,14 @@ import blogThumb1 from "@/assets/images/blog-thumb1.png";
 import blogThumb2 from "@/assets/images/blog-thumb2.png";
 import blogThumb3 from "@/assets/images/blog-thumb3.png";
 import blogBg from "@/assets/images/blog-bg.png";
+import Container from "@/components/Container";
 
 const Blog = () => {
   return (
     <>
       <section className="relative mt-[110.9px]">
         <img src={blogBg} className="absolute left-0 right-0 top-0 -z-10 translate-y-[-145px] object-cover" alt="" />
-        <div className="container">
+        <Container>
           <div className="flex flex-col items-center gap-3 text-center" data-aos="fade-up" data-aos-duration={1000} data-aos-once="true">
             <HeadingSubtitle>The Blog</HeadingSubtitle>
             <HeadingTitle className="min-h-[50px] translate-x-[.7px]">Our latest news</HeadingTitle>
@@ -38,7 +39,7 @@ const Blog = () => {
               thumb={blogThumb3}
             />
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

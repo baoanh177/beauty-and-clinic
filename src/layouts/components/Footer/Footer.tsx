@@ -7,6 +7,7 @@ import ig from "@/assets/images/footer-ig-icon.png"
 import linkin from "@/assets/images/footer-in.png"
 import css from "./footer.module.scss"
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const Footer = ({ className }: { className?: string }) => {
   return (
@@ -14,7 +15,7 @@ const Footer = ({ className }: { className?: string }) => {
       {/* Footer */}
       <footer className={clsx(css.footer, className)}>
         <img src={background} alt="" className={css.footerBg} />
-        <div className={clsx(css.content, "container")}>
+        <Container className={css.content}>
           <div className={css.information}>
             <Logo type="light"/>
             <div className={css.informationContent}>
@@ -96,8 +97,8 @@ const Footer = ({ className }: { className?: string }) => {
               </ul>
             </div>
           </div>
-        </div>
-        <div className={clsx(css.row, "container")}>
+        </Container>
+        <Container className={css.row}>
           <ul className={css.socials}>
             <li className={css.socialIcon}>
               <img src={fb} alt="" />
@@ -116,7 +117,7 @@ const Footer = ({ className }: { className?: string }) => {
             </li>
           </ul>
           <p className={css.copyright}>© AltDesain Studio 2021 - All right reserved.</p>
-        </div>
+        </Container>
         <div className={css.footerBottomBg} />
       </footer>
     </>

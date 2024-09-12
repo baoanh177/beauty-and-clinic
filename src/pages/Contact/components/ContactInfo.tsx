@@ -4,12 +4,13 @@ import HeadingTitle from "@/components/HeadingTitle";
 import mapIcon from "@/assets/images/map-icon.png";
 import phoneIcon from "@/assets/images/contact-page-phone-icon.png";
 import mailIcon from "@/assets/images/mail-icon.png";
+import Container from "@/components/Container";
 
 const ContactInfo = () => {
   return (
     <>
       <section className="mt-[115px] pb-[55px]">
-        <div className="container">
+        <Container>
           <div className="flex flex-col items-center text-center">
             <HeadingSubtitle children="Get in Touch" />
             <HeadingTitle children="Get direct handling by us" className="mt-3 min-h-[57px]" />
@@ -50,7 +51,7 @@ const ContactInfo = () => {
               />
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

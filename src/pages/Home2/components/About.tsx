@@ -3,12 +3,13 @@ import Button from "@/components/Button/Button";
 import HeadingSubtitle from "@/components/HeadingSubtitle";
 import HeadingTitle from "@/components/HeadingTitle";
 import HeadingDesc from "@/components/HeadingDesc";
+import Container from "@/components/Container";
 
 const About = () => {
   return (
     <>
       <section className="pt-[70px] lg:pt-[159px]">
-        <div className="container flex flex-col items-center gap-[100px] lg:flex-row lg:items-start lg:gap-[168px]">
+        <Container className="flex flex-col items-center gap-[100px] lg:flex-row lg:items-start lg:gap-[168px]">
           <figure data-aos="fade-right" className="mt-[-1px]" data-aos-duration={1000} data-aos-once="true">
             <img src={image} alt="" />
           </figure>
@@ -28,7 +29,7 @@ const About = () => {
               Learn More
             </Button>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

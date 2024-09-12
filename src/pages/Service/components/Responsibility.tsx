@@ -3,15 +3,16 @@ import HeadingDesc from "@/components/HeadingDesc";
 import HeadingTitle from "@/components/HeadingTitle";
 import playIcon from "@/assets/images/home2-hero-play-icon.png";
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const Responsibility = () => {
   return (
     <>
       <section className="relative mt-[130px]">
         <img src={background} alt="" className="min-h-[600px] lg:min-h-[529px] w-full object-cover" />
-        <article
+        <Container
           className={clsx(
-            "container absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col-reverse items-center",
+            "absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col-reverse items-center",
             "lg:flex-row lg:items-start",
           )}
         >
@@ -28,7 +29,7 @@ const Responsibility = () => {
               Treatments Videos
             </div>
           </div>
-        </article>
+        </Container>
       </section>
     </>
   );

@@ -6,13 +6,14 @@ import serviceImg2 from "@/assets/images/home2-service-img-2.png";
 import serviceImg3 from "@/assets/images/home2-service-img-3.png";
 import background from "@/assets/images/home2-service-bg.png";
 import SmallServiceCard from "@/components/SmallServiceCard";
+import Container from "@/components/Container";
 
 const Service = () => {
   return (
     <>
       <section className="relative mt-[70px] lg:mt-[158.8px]">
         <img src={background} alt="" className="absolute bottom-0 left-0 -z-10 translate-y-1/2 pt-5" />
-        <div className="container flex flex-col" data-aos="fade-up" data-aos-duration={1000} data-aos-once="true">
+        <Container className="flex flex-col" data-aos="fade-up" data-aos-duration={1000} data-aos-once="true">
           <div className="flex flex-col justify-center gap-[12px] text-center">
             <HeadingSubtitle className="translate-x-[.5px]">Main Services</HeadingSubtitle>
             <HeadingTitle className="min-h-[53px]">Our focus services</HeadingTitle>
@@ -28,7 +29,7 @@ const Service = () => {
             <SmallServiceCard thumb={serviceImg2} desc="Lorem ipsum dolor sit amet, consectetur adipiscing." title="Skin treatments" />
             <SmallServiceCard thumb={serviceImg3} desc="Lorem ipsum dolor sit amet, consectetur adipiscing." title="Beauty product" />
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

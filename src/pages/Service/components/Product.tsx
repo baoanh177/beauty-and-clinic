@@ -4,14 +4,15 @@ import HeadingTitle from "@/components/HeadingTitle";
 import clsx from "clsx";
 import image from "@/assets/images/service-page-product-img.png";
 import icon from "@/assets/images/home2-learn-more-icon.png";
+import Container from "@/components/Container";
 
 const Product = () => {
   return (
     <>
       <section className="mt-[92px]">
-        <div
+        <Container
           className={clsx(
-            "container flex flex-col-reverse items-center gap-[20px]",
+            "flex flex-col-reverse items-center gap-[20px]",
             "md:flex-row md:items-start md:gap-[40px] lg:gap-[100px] xl:gap-[187px]",
           )}
         >
@@ -30,7 +31,7 @@ const Product = () => {
               </div>
             </div>
           </article>
-        </div>
+        </Container>
       </section>
     </>
   );

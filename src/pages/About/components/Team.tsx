@@ -3,13 +3,14 @@ import HeadingSubtitle from "@/components/HeadingSubtitle";
 import HeadingTitle from "@/components/HeadingTitle";
 import background from "@/assets/images/about-page-team-bg.png";
 import MemberList from "@/components/MemberList";
+import Container from "@/components/Container";
 
 const Team = () => {
   return (
     <>
       <section className="relative !mt-[137px]">
         <img src={background} alt="" className="absolute right-0 top-[-524px] -z-10" />
-        <div className="container">
+        <Container>
           <div className="flex flex-col items-center gap-3 text-center">
             <HeadingSubtitle>Professional Teams</HeadingSubtitle>
             <HeadingTitle className="min-h-[52px]">The Professional expert</HeadingTitle>
@@ -24,7 +25,7 @@ const Team = () => {
             data-aos-once="true"
             data-aos-anchor-placement="center-center"
           />
-        </div>
+        </Container>
       </section>
     </>
   );

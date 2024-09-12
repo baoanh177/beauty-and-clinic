@@ -3,13 +3,14 @@ import img from "@/assets/images/hero-img.png"
 import Button from "@/components/Button/Button";
 import css from "./hero.module.scss"
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const Hero = () => {
   return (
     <>
       {/* Hero */}
       <img className={css.heroBackground} src={background} />
-      <section className={clsx(css.hero, "container")}>
+      <Container className={css.hero}>
         <div className={css.heroInner}>
           <article className={css.heroContent}>
             <h2 className={clsx(css.title, "title")}>Clinic &amp; beauty consultant</h2>
@@ -25,7 +26,7 @@ const Hero = () => {
           <div className={clsx(css.paginationItem, css.active)} />
           <div className={css.paginationItem} />
         </div>
-      </section>
+      </Container>
     </>
   );
 };

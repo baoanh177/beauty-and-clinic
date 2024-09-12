@@ -5,12 +5,13 @@ import fbIcon from "@/assets/images/blog-page-fb-icon.png";
 import igIcon from "@/assets/images/blog-page-ig-icon.png";
 import twIcon from "@/assets/images/blog-page-tw-icon.png";
 import inIcon from "@/assets/images/blog-page-in-icon.png";
+import Container from "@/components/Container";
 
 const Blog = () => {
   return (
     <>
       <Heading />
-      <div className="container">
+      <Container>
         <div className="flex flex-col-reverse gap-[40px] pt-[108px] md:flex-row md:gap-[60px]">
           <BlogList />
           <Search />
@@ -45,7 +46,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 };

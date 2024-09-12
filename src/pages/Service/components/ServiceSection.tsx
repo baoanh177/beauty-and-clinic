@@ -7,13 +7,14 @@ import image3 from "@/assets/images/service-page-service-img-3.png";
 import image4 from "@/assets/images/service-page-service-img-4.png";
 import background from "@/assets/images/service-page-service-bg.png";
 import clsx from "clsx";
+import Container from "@/components/Container";
 
 const ServiceSection = () => {
   return (
     <>
       <section className="relative mt-[60px] md:mt-[125.5px]">
         <img src={background} alt="" className="absolute -z-10 top-[-30px] left-0 right-0 object-cover" />
-        <div className="container xl:!max-w-[1100px]">
+        <Container className="xl:!max-w-[1100px]">
           <div className="flex flex-col items-center gap-3 text-center">
             <HeadingSubtitle children="Our Services" />
             <HeadingTitle children="We focus on your beauty" className="min-h-[57px]" />
@@ -37,7 +38,7 @@ const ServiceSection = () => {
               </figure>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

@@ -17,6 +17,7 @@ import avatar2 from "@/assets/images/client2.png";
 import avatar3 from "@/assets/images/client3.png";
 import avatar4 from "@/assets/images/client4.png";
 import avatar5 from "@/assets/images/client5.png";
+import Container from "@/components/Container";
 
 const avatars = [image1, avatar1, avatar2, avatar3, avatar4, avatar5];
 
@@ -84,7 +85,7 @@ const Testimonial = () => {
     <>
       <section className="relative pb-[16px] pt-[118px]">
         <img src={background} alt="" className="absolute left-0 right-0 top-[2px] w-full object-cover -z-10" />
-        <div className="container translate-x-[.5px]">
+        <Container className="translate-x-[.5px]">
           <div className="flex translate-y-[.5px] flex-col items-center gap-3 text-center">
             <HeadingSubtitle children="Our Testimonials" className="" />
             <HeadingTitle children="What our customer says" className="min-h-[57px]" />
@@ -130,7 +131,7 @@ const Testimonial = () => {
             <i className="fa-solid fa-angles-left text-2xl text-gray-500" ref={prevBtnMobileRef}></i>
             <i className="fa-solid fa-angles-right text-2xl text-gray-500" ref={nextBtnMobileRef}></i>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

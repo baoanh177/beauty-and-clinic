@@ -1,4 +1,5 @@
 import image from "@/assets/images/home2-about-img.png";
+import Container from "@/components/Container";
 import HeadingDesc from "@/components/HeadingDesc";
 import HeadingSubtitle from "@/components/HeadingSubtitle";
 import HeadingTitle from "@/components/HeadingTitle";
@@ -8,9 +9,9 @@ const Vision = () => {
   return (
     <>
       <section className="mt-[112px]">
-        <div
+        <Container
           className={clsx(
-            "container flex flex-col-reverse items-center text-center",
+            "flex flex-col-reverse items-center text-center",
             "min-[900px]::gap-[50px] min-[900px]:flex-row min-[900px]:text-left",
             "lg:gap-[187px]",
           )}
@@ -41,7 +42,7 @@ const Vision = () => {
               <span>Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.</span>
             </HeadingDesc>
           </article>
-        </div>
+        </Container>
       </section>
     </>
   );
