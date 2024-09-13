@@ -1,8 +1,9 @@
-import clsx from "clsx";
 import { Link } from "react-router-dom";
-import css from "./header.module.scss";
 import { IMenuItem } from "@/layouts/data";
 import { useState } from "react";
+import { ChildMenu, ChildMenuWrapper, Menu, MenuItem, Nav, PlusIcon } from "./style";
+// @ts-ignore
+import tw from "twin.macro"; 
 
 export interface INavbarProps {
   type?: "dark" | "light";
@@ -13,19 +14,18 @@ const Navbar = ({ type = "dark" }: INavbarProps) => {
   const [detailMenu, setDetailMenu] = useState(false);
   return (
     <>
-      <nav className={clsx(css.navbar, css[type])}>
-        <ul className={css.menu}>
-          <li className={clsx(css.menuItem, css.active, "relative")} onClick={() => setDetailMenu(!detailMenu)}>
+      <Nav>
+        <Menu>
+          <MenuItem
+            type={type}
+            isActive
+            tw="relative mr-[44.2px] translate-x-[1.6px] font-semibold tracking-[0.098em]"
+            onClick={() => setDetailMenu(!detailMenu)}
+          >
             <div>Home</div>
-            <i className={clsx(css.plusIcon, "fa-solid fa-plus")}></i>
-            <div
-              id="dropdown"
-              className={clsx(
-                "absolute top-full z-30 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow transition-[visibility,opacity]",
-                detailMenu ? "visible opacity-100" : "invisible opacity-0",
-              )}
-            >
-              <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+            <PlusIcon className="fa-solid fa-plus" />
+            <ChildMenuWrapper detailMenu={detailMenu} id="dropdown">
+              <ChildMenu>
                 <li>
                   <Link to="/" className="block px-4 py-2 hover:bg-gray-100">
                     Home
@@ -46,23 +46,23 @@ const Navbar = ({ type = "dark" }: INavbarProps) => {
                     Contact
                   </Link>
                 </li>
-              </ul>
-            </div>
-          </li>
-          <li className={clsx(css.menuItem)}>
+              </ChildMenu>
+            </ChildMenuWrapper>
+          </MenuItem>
+          <MenuItem tw="mb-[1px] mr-[43.5px]" type={type}>
             <Link to="/about">About</Link>
-          </li>
-          <li className={clsx(css.menuItem)}>
+          </MenuItem>
+          <MenuItem tw="mr-[45px]" type={type}>
             <Link to="/service">Service</Link>
-          </li>
-          <li className={clsx(css.menuItem)}>
+          </MenuItem>
+          <MenuItem tw="mr-[46px]" type={type}>
             <Link to="/gallery">Gallery</Link>
-          </li>
-          <li className={clsx(css.menuItem)}>
+          </MenuItem>
+          <MenuItem type={type}>
             <Link to="/blog">Blog</Link>
-          </li>
-        </ul>
-      </nav>
+          </MenuItem>
+        </Menu>
+      </Nav>
     </>
   );
 };

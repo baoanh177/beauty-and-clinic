@@ -1,13 +1,13 @@
 import Logo, { ILogoProps } from "@/components/Logo/Logo";
-import Navbar, { INavbarProps } from "./Navbar";
+import Navbar, { INavbarProps } from "../Navbar";
 import Button from "@/components/Button/Button";
 import { Dispatch, SetStateAction } from "react";
-import css from "./header.module.scss";
-import clsx from "clsx";
 import { Link, useNavigate } from "react-router-dom";
 import { useArchive } from "@/hooks/useArchive";
 import { IAuthInitialState } from "@/services/store/auth/auth.slice";
 import UserName from "@/components/UserName";
+import { DesktopActionsWrapper, MobileActionsWrapper, SidebarIcon, SidebarToggle, Header as StyledHeader } from "./style";
+import clsx from "clsx";
 
 interface IHeaderProps {
   setSidebar: Dispatch<SetStateAction<boolean>>;
@@ -22,21 +22,21 @@ const Header = ({ setSidebar, logo, nav, className }: IHeaderProps) => {
   return (
     <>
       {/* Header */}
-      <header className={clsx(css.header, "container", className)}>
+      <StyledHeader {...{ className: clsx("container", className) }}>
         <Logo {...logo} />
-        <div className={css.actions}>
+        <DesktopActionsWrapper>
           <Navbar {...nav} />
           {state.profile ? (
             <span>
               Hi, <Link children={<UserName />} to="/profile" className="transition-colors hover:text-pink-600" />
             </span>
           ) : (
-            <Button className={css.contactBtn} onClick={() => navigate("/login")}>
+            <Button className="w-[157.6px] py-[10px] h-[52px] text-base font-semibold leading-6 tracking-[0.1em]" onClick={() => navigate("/login")}>
               Login
             </Button>
           )}
-        </div>
-        <div className="lg:hidden flex items-center gap-6">
+        </DesktopActionsWrapper>
+        <MobileActionsWrapper>
           {state.profile ? (
             <span>
               Hi, <Link children={<UserName />} to="/profile" className="transition-colors hover:text-pink-600" />
@@ -44,11 +44,11 @@ const Header = ({ setSidebar, logo, nav, className }: IHeaderProps) => {
           ) : (
             <Link children="Login" to="/login" className="text-pink-600" />
           )}
-          <div className={css.menuIcon} onClick={() => setSidebar(true)}>
-            <i className="fa-solid fa-bars" />
-          </div>
-        </div>
-      </header>
+          <SidebarToggle onClick={() => setSidebar(true)}>
+            <SidebarIcon className="fa-solid fa-bars" />
+          </SidebarToggle>
+        </MobileActionsWrapper>
+      </StyledHeader>
     </>
   );
 };

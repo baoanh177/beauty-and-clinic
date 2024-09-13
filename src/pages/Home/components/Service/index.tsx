@@ -2,9 +2,7 @@ import serviceThumb1 from "@/assets/images/service-thumb-1.png";
 import serviceThumb2 from "@/assets/images/service-thumb-2.png";
 import serviceThumb3 from "@/assets/images/service-thumb-3.png";
 import ServiceCard from "@/components/ServiceCard";
-import css from "./service.module.scss"
-import clsx from "clsx";
-import Container from "@/components/Container";
+import { Container, Desc, Heading, Services, Subtitle, Title } from "./style";
 
 interface IService {
   name: string;
@@ -33,23 +31,20 @@ const Service = () => {
   return (
     <>
       {/* Service */}
-      <Container className={css.service}>
-        <div className={css.heading}>
-          <span className={clsx(css.subtitle, "subtitle")}>Main Services</span>
-          <h2 className={clsx(css.title, "title")}>
-            Learn services to focus
-            on your beauty
-          </h2>
-          <p className={clsx(css.desc, "desc")}>
+      <Container>
+        <Heading>
+          <Subtitle>Main Services</Subtitle>
+          <Title>Learn services to focus on your beauty</Title>
+          <Desc>
             Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient amet, feugiat tellus sagittis, scelerisque eget
             nulla turpis.
-          </p>
-        </div>
-        <ul className={css.serviceList}>
+          </Desc>
+        </Heading>
+        <Services>
           {services.map((service, index) => (
-            <ServiceCard key={index} {...service}/>
+            <ServiceCard key={index} {...service} />
           ))}
-        </ul>
+        </Services>
       </Container>
     </>
   );

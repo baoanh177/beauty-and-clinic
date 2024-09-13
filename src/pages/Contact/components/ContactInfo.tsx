@@ -16,8 +16,8 @@ const ContactInfo = () => {
             <HeadingTitle children="Get direct handling by us" className="mt-3 min-h-[57px]" />
             <HeadingDesc children="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam." className="mt-3" />
           </div>
-          <div className="mt-[94px] flex justify-center gap-[36.5px] flex-wrap">
-            <div className="flex h-[402px] w-full sm:w-[424px] xl:w-[270px] flex-col items-center rounded-[42px] pt-[79.5px] text-center transition-all hover:w-full sm:hover:w-[424px] duration-700 hover:shadow-[0px_25px_50px_25px_#F6F7FF]">
+          <div className="mt-[94px] flex flex-wrap justify-center gap-[36.5px]">
+            <div className="flex h-[402px] w-full flex-col items-center rounded-[42px] pt-[79.5px] text-center transition-all duration-700 hover:w-full hover:shadow-[0px_25px_50px_25px_#F6F7FF] sm:w-[424px] sm:hover:w-[424px] xl:w-[270px]">
               <div className="h-[65px] w-[65px] shrink-0">
                 <img src={mapIcon} alt="" className="h-full w-full object-cover" />
               </div>
@@ -28,7 +28,7 @@ const ContactInfo = () => {
                 className="mt-[13px] max-w-[270px] text-sm leading-[21px] tracking-widest text-[#8B8B8B]"
               />
             </div>
-            <div className="flex h-[402px] w-full sm:w-[424px] xl:w-[270px] flex-col items-center rounded-[42px] pt-[79.5px] text-center transition-all hover:w-full sm:hover:w-[424px] duration-700 hover:shadow-[0px_25px_50px_25px_#F6F7FF]">
+            <div className="flex h-[402px] w-full flex-col items-center rounded-[42px] pt-[79.5px] text-center transition-all duration-700 hover:w-full hover:shadow-[0px_25px_50px_25px_#F6F7FF] sm:w-[424px] sm:hover:w-[424px] xl:w-[270px]">
               <div className="h-[65px] w-[65px] shrink-0">
                 <img src={phoneIcon} alt="" className="h-full w-full object-cover" />
               </div>
@@ -39,7 +39,7 @@ const ContactInfo = () => {
                 className="mt-[13px] max-w-[270px] text-sm leading-[21px] tracking-widest text-[#8B8B8B]"
               />
             </div>
-            <div className="flex h-[402px] w-full sm:w-[424px] xl:w-[270px] flex-col items-center rounded-[42px] pt-[79.5px] text-center transition-all hover:w-full sm:hover:w-[424px] duration-700 hover:shadow-[0px_25px_50px_25px_#F6F7FF]">
+            <div className="flex h-[402px] w-full flex-col items-center rounded-[42px] pt-[79.5px] text-center transition-all duration-700 hover:w-full hover:shadow-[0px_25px_50px_25px_#F6F7FF] sm:w-[424px] sm:hover:w-[424px] xl:w-[270px]">
               <div className="h-[65px] w-[65px] shrink-0">
                 <img src={mailIcon} alt="" className="h-full w-full object-cover" />
               </div>
